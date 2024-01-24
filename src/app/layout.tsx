@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { Onest } from 'next/font/google';
 import './globals.css';
 import Header from '@/ui/components/header';
 import Footer from '@/ui/components/footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const onest = Onest({ subsets: ['latin'] });
 
 export const viewPort: Viewport = {
   themeColor: '#8f7ada',
@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${onest.className}`}>
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
         <Header />
         {children}
