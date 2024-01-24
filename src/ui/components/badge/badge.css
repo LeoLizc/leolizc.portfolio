@@ -1,0 +1,64 @@
+/* TODO: Needs some cleaning */
+
+.badge {
+  position: relative;
+  height: auto;
+  display: flex;
+}
+
+.badge .hidden-text-container {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 2;
+  pointer-events: none;
+  height: 100%;
+}
+
+.badge .hidden-text {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: clip;
+  width: 0%;
+  border-width: 0px;
+  border-color: rgb(129 140 248 / 0);
+  transition: width 0.5s ease-in-out;
+  transition-property: padding, width, border;
+  margin: 0;
+  /* line-height: 100%; */
+}
+
+.badge .visible-text {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+
+  /* position: absolute;
+  left: 0;
+  z-index: 1;
+  text-align: left; */
+}
+
+.badge .visible-text.animated {
+  overflow: hidden;
+  text-overflow: clip;
+  transition: width 0.5s ease-in-out;
+}
+
+.badge:hover .visible-text.animated {
+  width: 0%;
+}
+
+.badge:hover .hidden-text {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  border-width: 1px;
+  border-color: rgb(129 140 248);
+  width: 100%;
+  pointer-events: fill;
+}
