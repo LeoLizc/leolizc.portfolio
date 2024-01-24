@@ -6,10 +6,10 @@ type BadgeProps = {
 };
 
 export default function Badge({ text, hiddenText }: BadgeProps) {
-  const defClassName = 'bg-indigo-100 text-indigo-800 text-xs font-medium me-2 py-0.5 rounded dark:bg-gray-700 dark:text-indigo-400';
+  const defClassName = 'bg-indigo-100 text-indigo-800 text-xs font-medium py-0.5 rounded dark:bg-gray-700 dark:text-indigo-400';
   const hiddenClassName = 'px-2.5 border border-indigo-400';
   return (
-    <div className="text-base badge">
+    <div className="text-base badge me-2 pointer-events-[fill]">
       <span className={`${defClassName} ${hiddenClassName} px-2.5 visible-text${hiddenText == null ? ' ' : ' animated'}`}>
         {text}
       </span>
