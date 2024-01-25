@@ -13,6 +13,12 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      boxShadow: {
+        'hilight-md': '0 0 4px 0 rgba(103, 232, 249, 0.8)',
+      },
+      dropShadow: {
+        'hilight-md': '0 0 2px rgba(103, 232, 249, 0.8)',
+      },
     },
   },
   plugins: [],
