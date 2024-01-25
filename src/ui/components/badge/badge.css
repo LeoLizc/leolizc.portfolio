@@ -19,7 +19,7 @@
 
 .badge .hidden-text {
   position: relative;
-  display: inline-block;
+  display: flex;
   white-space: nowrap;
   text-align: left;
   overflow: hidden;
@@ -34,7 +34,6 @@
 }
 
 .badge .visible-text {
-  display: inline-block;
   width: 100%;
   white-space: nowrap;
 
