@@ -24,8 +24,8 @@ export default function Experience() {
   return (
     <ol className="relative ml-4 border-s border-gray-200 dark:border-gray-700">
       {experiences.map((experience) => (
-        <li className="mb-10 ms-6">
-          <ExperienceItem key={experience.title} {...experience} />
+        <li key={experience.title} className="mb-10 ms-6">
+          <ExperienceItem {...experience} />
         </li>
       ))}
     </ol>
