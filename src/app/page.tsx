@@ -38,7 +38,7 @@ export default function Home() {
           </Badge>
         </nav>
       </SectionLayout>
-      <SectionLayout>
+      <SectionLayout title="Experiencia">
         <Experience />
       </SectionLayout>
     </main>
