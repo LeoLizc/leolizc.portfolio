@@ -19,6 +19,20 @@ const config: Config = {
       dropShadow: {
         'hilight-md': '0 0 2px rgba(103, 232, 249, 0.8)',
       },
+      animation: {
+        'background-shine': 'background-shine 2s linear infinite',
+        'background-shine-sp': 'background-shine 2.5s cubic-bezier(0.47, -0.02, 0.62, 0.99) .1s infinite both',
+      },
+      keyframes: {
+        'background-shine': {
+          from: {
+            backgroundPosition: '-20% 0',
+          },
+          '80%, 100%': {
+            backgroundPosition: '-220% 0',
+          },
+        },
+      },
     },
   },
   // darkMode: 'class',
