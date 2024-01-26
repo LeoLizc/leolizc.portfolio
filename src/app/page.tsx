@@ -2,12 +2,13 @@ import Badge from '@/ui/components/badge';
 import { GithubIcon, LinkedInIcon, MailIcon } from '@/ui/components/icons';
 import Indicator from '@/ui/components/indicator';
 import SectionLayout from '@/ui/components/section-layout';
+import Experience from '@/ui/components/sections/experience';
 
 export default function Home() {
   // ? Alternative text color #8ec8fb
   return (
     <main className="">
-      <SectionLayout>
+      <SectionLayout className="py-52 pb-48">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-5 items-center mb-4">
           ¡Hola! Soy Leonardo
           <Indicator href="/#contacto">
@@ -29,6 +30,9 @@ export default function Home() {
             <MailIcon />
           </Badge>
         </nav>
+      </SectionLayout>
+      <SectionLayout>
+        <Experience />
       </SectionLayout>
     </main>
   );
