@@ -23,6 +23,7 @@ const config: Config = {
       animation: {
         'background-shine': 'background-shine 2s linear infinite',
         'background-shine-sp': 'background-shine 2.5s cubic-bezier(0.47, -0.02, 0.62, 0.99) .1s infinite both',
+        'scroll-blur': 'scroll-blur linear both',
       },
       keyframes: {
         'background-shine': {
@@ -31,6 +32,13 @@ const config: Config = {
           },
           '80%, 100%': {
             backgroundPosition: '-220% 0',
+          },
+        },
+        'scroll-blur': {
+          to: {
+            boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1)',
+            background: 'rgba(0, 0, 0, 0.5)',
+            backdropFilter: 'blur(10px)',
           },
         },
       },
