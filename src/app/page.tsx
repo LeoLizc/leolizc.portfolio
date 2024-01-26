@@ -11,9 +11,16 @@ export default function Home() {
       <SectionLayout className="py-52 pb-48">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-5 items-center mb-4">
           ¡Hola! Soy Leonardo
-          <Indicator href="/#contacto">
-            Disponible para trabajar
-          </Indicator>
+          <a
+            href="https://www.linkedin.com/in/leonardo-lizcano-pinto0220/"
+            className="flex items-center hover:scale-105 transition"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Indicator>
+              Disponible para trabajar
+            </Indicator>
+          </a>
         </h1>
         <h2 className="text-2xl dark:text-sky-300 mb-5">
           Ingeniero de sistemas titulado. Desarrollador web backend con conocimientos en frontend.
