@@ -2,21 +2,16 @@ import ExperienceItem from '@components/experiece-item';
 
 const experiences = [
   {
-    title: 'Flowbite Application UI v2.0.0',
-    date: 'Released on January 13th, 2022',
-    description: 'Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.',
+    title: 'Desarrollador Backend - Proyecto Epics IEEE',
+    date: 'Agosto 2022 - Septiembre 2023',
+    description: 'Responsable del desarrollo del backend de la aplicación web para la gestión de proyectos de la rama estudiantil IEEE UN.', // TODO: Corregir descripción
     link: '/#',
     latest: true,
   },
   {
-    title: 'Flowbite Figma v1.3.0',
-    date: 'Released on December 7th, 2021',
-    description: 'All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.',
-  },
-  {
-    title: 'Flowbite Library v1.2.2',
-    date: 'Released on December 2nd, 2021',
-    description: 'Get started with dozens of web components and interactive elements built on top of Tailwind CSS.',
+    title: 'Mentor en programación web - MisionTIC 2022',
+    date: 'Septiembre 2022 - Octubre 2022',
+    description: 'Mentor en programación web durante el tercer ciclo del programa MisionTIC 2022, liderado por el Ministerio de las TIC de Colombia y la Universidad del Norte.', // TODO: Corregir descripción
   },
 ];
 

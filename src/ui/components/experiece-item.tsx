@@ -26,7 +26,7 @@ export default function ExperienceItem({
         {title}
         {latest && (
           <Indicator className="ms-3" isStatic>
-            Latest
+            Más reciente
           </Indicator>
         )}
       </h3>
