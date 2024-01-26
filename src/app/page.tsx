@@ -1,8 +1,8 @@
-import Badge from '@/ui/components/badge';
-import { GithubIcon, LinkedInIcon, MailIcon } from '@/ui/components/icons';
-import Indicator from '@/ui/components/indicator';
-import SectionLayout from '@/ui/components/section-layout';
-import Experience from '@/ui/components/sections/experience';
+import Badge from '@components/badge';
+import { GithubIcon, LinkedInIcon, MailIcon } from '@components/icons';
+import Indicator from '@components/indicator';
+import SectionLayout from '@components/section-layout';
+import Experience from '@sections/experience';
 
 export default function Home() {
   // ? Alternative text color #8ec8fb

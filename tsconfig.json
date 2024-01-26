@@ -29,6 +29,9 @@
       "@components/*": [
         "./src/ui/components/*"
       ],
+      "@sections/*": [
+        "./src/ui/sections/*"
+      ],
     }
   },
   "include": [

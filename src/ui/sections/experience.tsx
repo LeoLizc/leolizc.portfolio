@@ -1,4 +1,4 @@
-import ExperienceItem from './experiece-item';
+import ExperienceItem from '@components/experiece-item';
 
 const experiences = [
   {
