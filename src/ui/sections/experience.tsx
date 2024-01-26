@@ -2,10 +2,10 @@ import ExperienceItem from '@components/experiece-item';
 
 const experiences = [
   {
-    title: 'Desarrollador Backend - Proyecto Epics IEEE',
+    title: 'Desarrollador Backend - Eyeland Epics IEEE',
     date: 'Agosto 2022 - Septiembre 2023',
-    description: 'Responsable del desarrollo del backend de la aplicación web para la gestión de proyectos de la rama estudiantil IEEE UN.', // TODO: Corregir descripción
-    link: '/#',
+    description: 'Responsable del desarrollo backend en Proyecto parte de la iniciativa EPICS en IEEE, que se propone apoyar el proceso de **aprendizaje del inglés** para personas con **discapacidad visual** a través de una aplicación móvil, en su objetivo de aumentar la inclusión.', // TODO: Corregir descripción
+    link: 'https://eyeland-project.github.io/webpage/',
     latest: true,
   },
   {
