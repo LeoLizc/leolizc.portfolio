@@ -6,7 +6,7 @@ type IndicatorProps = {
 
 const onStaticClasses = [
   'dark:bg-[linear-gradient(110deg,#164e63,45%,#379abe,55%,#164e63)] bg-[length:200%_100%] animate-background-shine-sp',
-  'dark:bg-[linear-gradient(110deg,#164e63,45%,#1e2631,55%,#164e63)] bg-[length:200%_100%]',
+  'dark:bg-[linear-gradient(110deg,#164e63,47%,#1e2631,57%,#164e63)] bg-[length:200%_100%]',
 ];
 
 export default function Indicator({ children, isStatic = false, className = '' }: IndicatorProps) {
