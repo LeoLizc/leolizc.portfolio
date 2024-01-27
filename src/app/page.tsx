@@ -8,7 +8,7 @@ export default function Home() {
   // ? Alternative text color #8ec8fb
   return (
     <main className="">
-      <SectionLayout className="py-52 pb-48">
+      <SectionLayout className="pt-52 !pb-32">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-5 items-center mb-4">
           ¡Hola! Soy Leonardo
           <a
