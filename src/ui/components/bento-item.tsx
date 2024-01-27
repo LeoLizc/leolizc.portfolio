@@ -17,6 +17,7 @@ export default function BentoItem({
     overflow-hidden shadow-gray-400/20
     hover:shadow-gray-400/40 transition-all
     hover:scale-105
+    duration-300
     ${className}
     `)}
     >
