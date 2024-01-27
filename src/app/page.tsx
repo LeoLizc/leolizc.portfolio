@@ -1,3 +1,4 @@
+import Projects from '@/ui/sections/projects';
 import Badge from '@components/badge';
 import { GithubIcon, LinkedInIcon, MailIcon } from '@components/icons';
 import Indicator from '@components/indicator';
@@ -40,6 +41,9 @@ export default function Home() {
       </SectionLayout>
       <SectionLayout title="Experiencia" id="experiencia">
         <Experience />
+      </SectionLayout>
+      <SectionLayout title="Proyectos" id="proyectos">
+        <Projects />
       </SectionLayout>
     </main>
   );
