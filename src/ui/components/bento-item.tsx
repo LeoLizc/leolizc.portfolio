@@ -20,7 +20,8 @@ export default function BentoItem({
 }: BentoItemProps) {
   return (
     <article className={twMerge(`
-    col-span-6 row-span-2 relative rounded-xl overflow-hidden 
+    md:col-span-6 row-span-2 col-span-12
+    relative rounded-xl overflow-hidden 
     bg-white dark:bg-gray-400/10
     border border-gray-400/20
     shadow-md shadow-gray-400/20
