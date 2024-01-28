@@ -10,7 +10,7 @@ export default function SectionLayout({
   icon, title, children, className = '', id = '',
 }: SectionLayoutProps) {
   return (
-    <section id={id} className={`w-full lg:w-[740px] py-16 px-2 pb-8 ${className}`}>
+    <section id={id} className={`w-full lg:w-[740px] py-16 px-4 pb-8 ${className}`}>
       {title && (
         <>
           {icon && <div>{icon}</div>}
