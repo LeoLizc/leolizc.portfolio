@@ -49,15 +49,15 @@ export default function BentoItem({
           <Image
             src={imageSrc}
             alt={imageAlt}
-            layout="fill"
-            objectFit="cover"
+            fill
             className="absolute top-0 left-0 bottom-0 w-full
-                        h-full -z-20 object-left opacity-90
+                        object-cover
+                        h-full -z-20 object-left-top opacity-90
                         "
           />
         )
       }
-      <div className="flex h-full flex-col justify-end gap-1 p-3 z-20">
+      <div className="flex h-full flex-col justify-end p-3 z-20">
         <h3 className="text-xl font-semibold">
           {title}
         </h3>
