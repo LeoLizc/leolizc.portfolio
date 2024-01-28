@@ -15,13 +15,15 @@ export default function Projects() {
         className="col-span-4 row-span-3 [&_p]:leading-snug [&_h3]:leading-tight"
         title="Proyecto Parche"
         subtitle="Co-Autor"
-        description="Lorem ipsumdfsdfdsfs dffsfmkfndfg ndkgdfjgn ggnfmgnjdfsgndfn"
+        imageSrc="/imgs/Parche_shots_so.webp"
+        imageAlt="Captura de la pantalla principal de la aplicación"
+        description="Aplicación para salidas grupales, optimizando coordinación, puntualidad y diversión en ciudades"
       />
       <BentoItem
-        className="col-span-5"
+        className="col-span-5 [&_p]:leading-snug [&_p]:text-sm"
         title="Simulador de Cohete"
         subtitle="Autor"
-        description="Lorem ipsumdfsdfdsfs dffsfmkfndfg ndkgdfjgn ggnfmgnjdfsgndfn"
+        description="Simulador de cohete en Java Processing con físicas realistas. Modelos, océano y cámara 3D hechos desde cero en Processing"
       />
       <BentoItem
         className="col-span-7 [&_p]:leading-snug"
