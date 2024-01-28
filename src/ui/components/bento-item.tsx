@@ -38,7 +38,7 @@ export default function BentoItem({
                   bg-gradient-to-t from-black/85 via-black/55 via-45%
                   to-transparent/0 to-70%
                   group-hover:shadow-inner group-hover:shadow-white/20
-                  backdrop-filter backdrop-blur-[2px]
+                  backdrop-filter backdrop-blur-[2px] backdrop-brightness-90
                   group-hover:backdrop-blur-0 group-hover:backdrop-brightness-110
                   transition-all duration-300
                   "

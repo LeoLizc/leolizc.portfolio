@@ -47,3 +47,5 @@ export default function Projects() {
     </div>
   );
 }
+// #ff8836
+// #4d97ff
