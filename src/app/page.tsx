@@ -1,9 +1,10 @@
-import Projects from '@/ui/sections/projects';
 import Badge from '@components/badge';
 import { GithubIcon, LinkedInIcon, MailIcon } from '@components/icons';
 import Indicator from '@components/indicator';
 import SectionLayout from '@components/section-layout';
+import AboutMe from '@sections/about-me';
 import Experience from '@sections/experience';
+import Projects from '@sections/projects';
 
 export default function Home() {
   // ? Alternative text color #8ec8fb
@@ -44,6 +45,9 @@ export default function Home() {
       </SectionLayout>
       <SectionLayout title="Proyectos" id="proyectos">
         <Projects />
+      </SectionLayout>
+      <SectionLayout title="Sobre mí" id="sobre-mi">
+        <AboutMe />
       </SectionLayout>
     </main>
   );
