@@ -52,7 +52,7 @@ export default function Home() {
       <SectionLayout title="Sobre mí" id="sobre-mi">
         <AboutMe />
       </SectionLayout>
-      <SectionLayout title="Contacto" id="contacto">
+      <SectionLayout title="Contáctame" id="contacto">
         <ContactMe />
       </SectionLayout>
     </main>
