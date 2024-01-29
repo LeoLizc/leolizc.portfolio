@@ -1,3 +1,4 @@
+import ContactMe from '@sections/contact-me';
 import Badge from '@components/badge';
 import { GithubIcon, LinkedInIcon, MailIcon } from '@components/icons';
 import Indicator from '@components/indicator';
@@ -50,6 +51,9 @@ export default function Home() {
       </SectionLayout>
       <SectionLayout title="Sobre mí" id="sobre-mi">
         <AboutMe />
+      </SectionLayout>
+      <SectionLayout title="Contacto" id="contacto">
+        <ContactMe />
       </SectionLayout>
     </main>
   );
