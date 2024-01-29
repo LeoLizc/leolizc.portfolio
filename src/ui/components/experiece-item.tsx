@@ -1,4 +1,5 @@
 import Markdown from 'markdown-to-jsx';
+import React from 'react';
 import Indicator from './indicator';
 
 type ExpItemProps = {
@@ -34,9 +35,9 @@ export default function ExperienceItem({
       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
         {date}
       </time>
-      <p className="mb-4 text-lg font-normal text-gray-500 dark:text-white [&_strong]:text-yellow-200 [&_em]:text-indigo-300">
-        <Markdown>{description}</Markdown>
-      </p>
+      <section className="mb-4 [&_p]:text-lg [&_p]:font-normal [&_p]:text-gray-500 [&_p]:dark:text-white [&_strong]:text-yellow-200 [&_em]:text-indigo-300 [&_p]:text-pretty">
+        <Markdown options={{ forceBlock: true, wrapper: React.Fragment }}>{description}</Markdown>
+      </section>
       {link && (
         <a
           href={link}
