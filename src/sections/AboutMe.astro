@@ -1,11 +1,13 @@
 ---
 import { parse } from 'marked';
-const content = `Soy **Leonardo Lizcano**, conocido como *Leo*. Mi interés por la programación surgió en la secundaria, donde desarrollé un sistema de inventario en **VBA**. Recientemente, completé mis estudios en **Ingeniería de Sistemas** en la *Universidad del Norte*, consolidando mi pasión por los sistemas automatizados.
+const content = `Mi interés por la programación surgió en la secundaria, cuando desarrollé un sistema de inventario en **VBA** y, recientemente, he completado mis estudios de pregrado en **Ingeniería de Sistemas** en la *Universidad del Norte*.
 
-Durante mi formación, participé en eventos como *Expofísica*, presentando un simulador de **Bungee Jumping** con físicas realistas. Destacé en maratones de programación internas respaldadas por *ACM*. También colaboré en iniciativas universitarias como *Misión Tic* y *Eyeland* con *Epics IEEE*, principalmente como **desarrollador de Backend**.
+Durante mi formación, participé en eventos como *Expofísica*, con un simulador de físicas realistas. También destacé en **maratones de programación** en la institución, y tuve la oportunidad de participar en iniciativas apoyadas por la universidad.
 
-A nivel personal, me fascinan la **automatización** y la **inteligencia artificial**. He desarrollado proyectos para controlar dispositivos eléctricos de mi hogar con un *asistente virtual* y creado simuladores con físicas realistas. Además, disfruto creando mods para juegos y explorando nuevos hobbies como **tallar madera** y manualidades. Estoy siempre en busca de nuevas experiencias.
+A nivel personal, me fascinan la **automatización** y la **inteligencia artificial**. He desarrollado proyectos para *controlar* partes de mi casa con un **asistente virtual**. Además, disfruto desarrollando **mods** y explorando nuevos hobbies como **tallar madera**.
 `;
+// Second paragraph: , principalmente como **desarrollador de Backend**
+// Third paragraph: Estoy siempre en busca de nuevas experiencias.
 ---
 
 <div class='flex flex-col md:flex-row justify-center items-center gap-4'>
@@ -19,7 +21,7 @@ A nivel personal, me fascinan la **automatización** y la **inteligencia artific
   />
   <div
     class='[&>p]:mb-4 md:[&>p]:text-right [&>p]:text-left [&>p]:font-medium
-  [&>p>strong]:text-yellow-300 [&>p>em]:text-cyan-400'
+  [&>p>strong]:text-yellow-300 [&>p>em]:text-cyan-400 [&>p]:text-pretty'
     set:html={parse(content)}
   >
     <!-- <Markdown options={{
