@@ -9,11 +9,13 @@ const { class: className = '', id = '', title } = Astro.props;
 ---
 
 <section id={id} class={`w-full lg:w-[740px] py-16 px-4 pb-8 ${className}`}>
-  <slot name='icon' />
   {
     title && (
       <>
-        <h2 class='text-4xl font-semibold mb-2 text-gray-300/95'>{title}</h2>
+        <h2 class='text-4xl font-semibold text-gray-300/95 mb-2 flex items-center gap-2'>
+          <slot name='icon' />
+          {title}
+        </h2>
         <hr class='h-px mb-8 bg-gray-200 border-0 dark:bg-gray-700' />
       </>
     )
