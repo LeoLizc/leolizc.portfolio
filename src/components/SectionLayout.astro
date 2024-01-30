@@ -12,7 +12,7 @@ const { class: className = '', id = '', title } = Astro.props;
   {
     title && (
       <>
-        <h2 class='text-4xl font-semibold text-gray-300/95 mb-2 flex items-center gap-2'>
+        <h2 class='text-3xl lg:text-4xl font-semibold text-gray-300/95 mb-2 flex items-center gap-2'>
           <slot name='icon' />
           {title}
         </h2>

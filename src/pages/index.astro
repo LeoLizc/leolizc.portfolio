@@ -18,10 +18,12 @@ import Layout from '@layouts/Layout.astro';
 
 <Layout title='Portfolio LeoLizc | Ingeniero de Sistemas'>
   <main class=''>
-    <SectionLayout class='pt-52 !pb-32 !h-[100svh] flex items-center'>
+    <SectionLayout
+      class='md:pt-52 md:!pb-32 !h-[90svh] md:!h-[100svh] flex items-center'
+    >
       <div>
         <h1
-          class='text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-5 items-center mb-4'
+          class='text-2xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-2 md:gap-5 items-center mb-4'
         >
           ¡Hola! Soy Leonardo
           <a
@@ -33,24 +35,24 @@ import Layout from '@layouts/Layout.astro';
             <Badge>Disponible para trabajar</Badge>
           </a>
         </h1>
-        <h2 class='text-2xl dark:text-sky-300 mb-5'>
+        <h2 class='text-xl lg:text-2xl dark:text-sky-300 mb-5 text-balance'>
           Ingeniero de sistemas titulado. Desarrollador web backend con
           conocimientos en frontend. Y aficionado a la inteligencia artificial.
         </h2>
-        <nav class='flex my-5 gap-2'>
-          <a href='https://github.com/LeoLizc'>
-            <SocialPill text='Github' hiddenText='Leolizc'>
-              <GithubIcon slot='icon' />
-            </SocialPill>
-          </a>
+        <nav class='flex my-5 gap-2 flex-wrap'>
+          <SocialPill text='Email' hiddenText='leolizcanop@gmail.com'>
+            <MailIcon slot='icon' />
+          </SocialPill>
           <a href='https://www.linkedin.com/in/leonardo-lizcano-pinto0220/'>
             <SocialPill text='LinkedIn' hiddenText='Leonardo Lizcano'>
               <LinkedInIcon slot='icon' />
             </SocialPill>
           </a>
-          <SocialPill text='Email' hiddenText='leolizcanop@gmail.com'>
-            <MailIcon slot='icon' />
-          </SocialPill>
+          <a href='https://github.com/LeoLizc'>
+            <SocialPill text='Github' hiddenText='Leolizc'>
+              <GithubIcon slot='icon' />
+            </SocialPill>
+          </a>
         </nav>
       </div>
     </SectionLayout>

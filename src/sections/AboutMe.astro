@@ -10,7 +10,9 @@ A nivel personal, me fascinan la **automatización** y la **inteligencia artific
 // Third paragraph: Estoy siempre en busca de nuevas experiencias.
 ---
 
-<div class='flex flex-col md:flex-row justify-center items-center gap-4'>
+<div
+  class='flex flex-col md:flex-row justify-center items-center gap-4 px-2 md:px-0'
+>
   <img
     class='rounded-full size-60'
     width='200'
@@ -20,8 +22,7 @@ A nivel personal, me fascinan la **automatización** y la **inteligencia artific
     style={{ shapeOutside: 'circle(20%)' }}
   />
   <div
-    class='[&>p]:mb-4 md:[&>p]:text-right [&>p]:text-left [&>p]:font-medium
-  [&>p>strong]:text-yellow-300 [&>p>em]:text-cyan-400 [&>p]:text-pretty'
+    class='[&>p]:mb-4 md:[&>p]:text-right [&>p]:text-left [&>p]:font-medium [&>p>strong]:text-yellow-300 [&>p>em]:text-cyan-400 [&>p]:text-pretty'
     set:html={parse(content)}
   >
     <!-- <Markdown options={{

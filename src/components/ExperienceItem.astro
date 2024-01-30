@@ -34,7 +34,7 @@ const { title, date, description, link, latest } = Astro.props;
   {title}
   {
     latest && (
-      <Badge class='ms-3' isStatic>
+      <Badge class='ms-3 hidden md:block' isStatic>
         Más reciente
       </Badge>
     )
@@ -46,7 +46,7 @@ const { title, date, description, link, latest } = Astro.props;
   {date}
 </time>
 <section
-  class='mb-4 [&_p]:text-lg [&_p]:font-normal [&_p]:text-gray-500 [&_p]:dark:text-white [&_strong]:text-yellow-200 [&_em]:text-indigo-300 [&_p]:text-pretty'
+  class='mb-4 text-base [&_p]:lg:text-lg [&_p]:font-normal [&_p]:text-gray-500 [&_p]:dark:text-white [&_strong]:text-yellow-200 [&_em]:text-indigo-300 [&_p]:text-pretty'
   set:html={parse(description)}
 >
   <!-- <Markdown options={{ forceBlock: true, wrapper: AstroAssets }}>{description}</Markdown> -->
