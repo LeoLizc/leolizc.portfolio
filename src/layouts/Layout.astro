@@ -1,0 +1,92 @@
+---
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+import { ViewTransitions } from 'astro:transitions';
+import '@fontsource-variable/onest';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+
+// export const viewPort: Viewport = {
+//   themeColor: '#8f7ada',
+// };
+
+// export const metadata: Metadata = {
+//   title: 'Portfolio LeoLizc | Ingeniero de Sistemas',
+//   description: 'Portfolio de Leonardo Lizcano, Ingeniero de Sistemas de la Universidad del Norte, Colombia.',
+//   robots: 'index, follow',
+// alternates: {}, // TODO: Add alternates for other languages (if any). Also the canonical URL.
+// openGraph: {
+//   type: 'website',
+//   locale: 'es_CO',
+//   url: 'https://leolizcano.vercel.app/',
+//   title: 'Portfolio LeoLizc | Ingeniero de Sistemas',
+//   description: 'Portfolio de Leonardo Lizcano, Ingeniero de Sistemas
+// de la Universidad del Norte, Colombia.',
+//   images: [
+//     {
+//       url: '/imgs/avatar.webp',
+//       width: 512,
+//       height: 512,
+//       alt: 'avatar',
+//     },
+//   ],
+// },
+// };
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta
+      name='description'
+      content='Portfolio de Leonardo Lizcano, Ingeniero de Sistemas de la Universidad del Norte, Colombia.'
+    />
+    <meta name='robots' content='index, follow' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body
+    class='animate-fade animate-duration-[1200ms] animate-delay-[200ms] animate-ease-in-out animate-fill-forwards'
+  >
+    <div
+      class='absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_90%_at_50%_-27%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'
+    >
+    </div>
+    <Header />
+    <slot />
+    <Footer />
+  </body><style is:global>
+    :root {
+      color-scheme: light dark;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100dvh;
+      font-family: 'Onest Variable', sans-serif;
+      /* padding: 0.75rem; */
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</html>

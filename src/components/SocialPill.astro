@@ -1,0 +1,97 @@
+---
+interface Props {
+  text: string;
+  hiddenText?: string;
+}
+
+const { text, hiddenText } = Astro.props;
+
+const defClassName =
+  'bg-indigo-100 text-indigo-800 text-s font-medium py-0.5 rounded-md dark:bg-gray-700 dark:text-indigo-300';
+const hiddenClassName = 'px-2.5 border border-indigo-400';
+---
+
+<div class='text-base badge me-2 pointer-events-[fill]'>
+  <span
+    class={`${defClassName} ${hiddenClassName} px-2.5 visible-text${
+      hiddenText == null ? ' ' : ' animated'
+    } flex gap-1`}
+  >
+    <slot name='icon' />
+    {text}
+  </span>
+  {
+    hiddenText && (
+      <div class='hidden-text-container'>
+        <span class={`${defClassName} hidden-text display-flex gap-1`}>
+          {/* {children} */}
+          {hiddenText}
+        </span>
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .badge {
+    position: relative;
+    height: auto;
+    display: flex;
+  }
+
+  .badge .hidden-text-container {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+    pointer-events: none;
+    height: 100%;
+  }
+
+  .badge .hidden-text {
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 0%;
+    border-width: 0px;
+    border-color: rgb(129 140 248 / 0);
+    transition: width 0.5s ease-in-out;
+    transition-property: padding, width, border;
+    margin: 0;
+    /* line-height: 100%; */
+  }
+
+  .badge .visible-text {
+    width: 100%;
+    white-space: nowrap;
+
+    /* position: absolute;
+  left: 0;
+  z-index: 1;
+  text-align: left; */
+  }
+
+  .badge .visible-text.animated {
+    overflow: hidden;
+    text-overflow: clip;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .badge:hover .visible-text.animated {
+    width: 0%;
+  }
+
+  .badge:hover .hidden-text {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    border-width: 1px;
+    border-color: rgb(129 140 248);
+    width: 100%;
+    pointer-events: fill;
+  }
+</style>
