@@ -2,7 +2,14 @@
   class='flex flex-row lg:justify-between justify-around w-full lg:w-[1020px] p-3 py-4 md:py-2 relative md:fixed top-0 animate-scroll-blur [animation-timeline:scroll()] [animation-range:0_900px] z-20'
 >
   <a href='/#' class='hidden sm:block'>
-    <img src='/imgs/avatar.webp' width='48' height='48' alt='avatar' />
+    <img
+      src='/imgs/avatar.webp'
+      width='48'
+      height='48'
+      alt='avatar'
+      loading='lazy'
+      decoding='async'
+    />
   </a>
   <nav
     class='flex flex-row items-center gap-6 [&>a]:sm:text-base [&>a]:text-sm'
