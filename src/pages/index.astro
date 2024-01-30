@@ -1,15 +1,19 @@
 ---
-import SectionLayout from '@components/SectionLayout.astro';
-import Layout from '../layouts/Layout.astro';
 import Badge from '@components/Badge.astro';
+import SectionLayout from '@components/SectionLayout.astro';
 import SocialPill from '@components/SocialPill.astro';
-import GithubIcon from '@components/icons/GithubIcon.astro';
-import LinkedInIcon from '@components/icons/LinkedInIcon.astro';
-import MailIcon from '@components/icons/MailIcon.astro';
-import Experience from '@sections/Experience.astro';
-import Projects from '@sections/Projects.astro';
+import MailUpIcon from '@icons/MailUpIcon.astro';
+import WritingIcon from '@icons/WritingIcon.astro';
+import BuildingIcon from '@icons/BuildingIcon.astro';
+import GithubIcon from '@icons/GithubIcon.astro';
+import LinkedInIcon from '@icons/LinkedInIcon.astro';
+import MailIcon from '@icons/MailIcon.astro';
+import TerminalIcon from '@icons/TerminalIcon.astro';
 import AboutMe from '@sections/AboutMe.astro';
 import ContactMe from '@sections/ContactMe.astro';
+import Experience from '@sections/Experience.astro';
+import Projects from '@sections/Projects.astro';
+import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout title='Portfolio LeoLizc | Ingeniero de Sistemas'>
@@ -36,30 +40,34 @@ import ContactMe from '@sections/ContactMe.astro';
         <nav class='flex my-5 gap-2'>
           <a href='https://github.com/LeoLizc'>
             <SocialPill text='Github' hiddenText='Leolizc'>
-              <GithubIcon />
+              <GithubIcon slot='icon' />
             </SocialPill>
           </a>
           <a href='https://www.linkedin.com/in/leonardo-lizcano-pinto0220/'>
             <SocialPill text='LinkedIn' hiddenText='Leonardo Lizcano'>
-              <LinkedInIcon />
+              <LinkedInIcon slot='icon' />
             </SocialPill>
           </a>
           <SocialPill text='Email' hiddenText='leolizcanop@gmail.com'>
-            <MailIcon />
+            <MailIcon slot='icon' />
           </SocialPill>
         </nav>
       </div>
     </SectionLayout>
     <SectionLayout title='Experiencia' id='experiencia'>
+      <BuildingIcon slot='icon' class='size-8' />
       <Experience />
     </SectionLayout>
     <SectionLayout title='Proyectos' id='proyectos'>
+      <TerminalIcon slot='icon' class='size-8' />
       <Projects />
     </SectionLayout>
     <SectionLayout title='Sobre mí' id='sobre-mi'>
+      <WritingIcon slot='icon' class='size-8' />
       <AboutMe />
     </SectionLayout>
     <SectionLayout title='Contáctame' id='contacto'>
+      <MailUpIcon slot='icon' class='size-8' />
       <ContactMe />
     </SectionLayout>
   </main>
