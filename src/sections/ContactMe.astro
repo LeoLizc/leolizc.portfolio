@@ -6,11 +6,7 @@ method="post"
 enc-type="text/plain"*/
 ---
 
-<form
-  class='md:max-w-lg max-w-96 mx-auto mb-10'
-  action='mailto:ldlizcano@uninorte.edu.co'
-  target='_blank'
->
+<form class='md:max-w-lg max-w-96 mx-auto mb-10' action='/' method='post'>
   {
     /* <div class="mb-5">
         <label htmlFor="name" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white/80">Tu nombre</label>
@@ -70,6 +66,11 @@ enc-type="text/plain"*/
       class='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
       >Submit</button
     >
-    <span class='text-sm text-white/50'>ldlizcano@uninorte.edu.co</span>
+    <a
+      href='mailto:ldlizcano@uninorte.edu.co'
+      target='_blank'
+      rel='noopener noreferrer'
+      class='text-sm text-white/50'>ldlizcano@uninorte.edu.co</a
+    >
   </div>
 </form>
