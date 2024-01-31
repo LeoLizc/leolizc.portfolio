@@ -1,14 +1,16 @@
 ---
 import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
+import { DEFAULT_LOCALE } from '@i18n/index';
 // import { ViewTransitions } from 'astro:transitions';
 import '@fontsource-variable/onest';
 
 interface Props {
   title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 
 // export const viewPort: Viewport = {
 //   themeColor: '#8f7ada',
@@ -36,17 +38,21 @@ const { title } = Astro.props;
 //   ],
 // },
 // };
+const local = Astro.currentLocale ?? DEFAULT_LOCALE;
 ---
 
 <!doctype html>
-<html lang='en' class='dark'>
+<html lang={local} class='dark'>
   <head>
     <meta charset='UTF-8' />
-    <meta
-      name='description'
-      content='Portfolio de Leonardo Lizcano, Ingeniero de Sistemas de la Universidad del Norte, Colombia.'
-    />
+    <meta name='description' content={description} />
     <meta name='robots' content='index, follow' />
+    <meta
+      name='keywords'
+      content='Portfolio, Leonardo Lizcano, LeoLizc, desarrollo web'
+    />
+    <meta name='author' content='Leonardo Lizcano' />
+    <meta name='theme-color' content='#8f7ada' />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
