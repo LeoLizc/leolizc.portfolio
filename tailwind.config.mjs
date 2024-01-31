@@ -1,5 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 import animations from 'tailwindcss-animated';
+import plugin from 'tailwindcss/plugin';
+
+const rotateY = plugin(function ({ addUtilities }) {
+  addUtilities({
+    '.rotate-y-0': {
+      transform: 'rotateY(0deg)',
+    },
+    '.rotate-y-20': {
+      transform: 'rotateY(20deg)',
+    },
+    '.rotate-y-50': {
+      transform: 'rotateY(50deg)',
+    },
+    '.rotate-y-80': {
+      transform: 'rotateY(80deg)',
+    },
+    '.rotate-y-180': {
+      transform: 'rotateY(180deg)',
+    },
+    '.-rotate-y-180': {
+      transform: 'rotateY(-180deg)',
+    },
+  })
+})
+
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   darkMode: "class",
@@ -40,5 +65,5 @@ export default {
       },
     },
   },
-  plugins: [animations],
+  plugins: [animations, rotateY],
 }

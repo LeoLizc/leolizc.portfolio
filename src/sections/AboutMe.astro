@@ -13,16 +13,25 @@ A nivel personal, me fascinan la **automatización** y la **inteligencia artific
 <div
   class='flex flex-col md:flex-row justify-center items-center gap-4 px-2 md:px-0'
 >
-  <img
-    class='rounded-full size-60'
-    width='200'
-    height='200'
-    src='/imgs/avatar.webp'
-    alt='Foto de Leo'
-    loading='lazy'
-    decoding='async'
-    style={{ shapeOutside: 'circle(20%)' }}
-  />
+  <input type='checkbox' name='luSecret' id='luSecret' class='hidden' />
+  <label for='luSecret' class='rounded-full size-60 relative shrink-0 group'>
+    <img
+      class='rounded-full size-60 absolute top-0 left-0 transition-transform duration-500 [#luSecret:checked+label_&]:rotate-y-180 [backface-visibility:hidden]'
+      width='200'
+      height='200'
+      src='/imgs/avatar.webp'
+      alt='Foto de Leo'
+      loading='lazy'
+      decoding='async'
+      style={{ shapeOutside: 'circle(20%)' }}
+    />
+    <div
+      class='absolute top-0 left-0 rounded-full size-60 bg-gradient-to-br from-[#0093E9] to-[#80D0C7] -rotate-y-180 transition-transform duration-500 [#luSecret:checked+label_&]:rotate-y-0 [backface-visibility:hidden] text-center py-4 px-4 flex justify-center items-center'
+    >
+      También tengo a la mejor amiga del mundo, pero eso es un secreto a voces
+      🤫
+    </div>
+  </label>
   <div
     class='[&>p]:mb-4 md:[&>p]:text-right [&>p]:text-left [&>p]:font-medium [&>p>strong]:text-yellow-300 [&>p>em]:text-cyan-400 [&>p]:text-pretty'
     set:html={parse(content)}
