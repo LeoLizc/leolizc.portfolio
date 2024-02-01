@@ -1,4 +1,8 @@
 ---
+import { useTranslations } from '@i18n/ui';
+
+const { currentLocale } = Astro;
+const t = useTranslations(currentLocale);
 const year = new Date().getFullYear();
 ---
 
@@ -6,16 +10,16 @@ const year = new Date().getFullYear();
   class='flex flex-row flex-wrap justify-between w-full lg:w-[1020px] mb-6 px-3'
 >
   <span class='text-sm text-yellow-200/90'
-    >{`© ${year} LeoLizc. Casi todos los derechos reservados`}</span
+    >{`© ${year} ${t('footer.copy')}`}</span
   >
   <ul
     class='flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0 gap-4 md:gap-6'
   >
     <li>
-      <a href='/#'>Sobre mí</a>
+      <a href='/#'>{t('nav.about')}</a>
     </li>
     <li>
-      <a href='/#'>Contacto</a>
+      <a href='/#'>{t('nav.contact')}</a>
     </li>
   </ul>
 </footer>

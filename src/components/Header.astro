@@ -1,3 +1,10 @@
+---
+import { useTranslations } from '@i18n/ui';
+
+const { currentLocale } = Astro;
+const t = useTranslations(currentLocale);
+---
+
 <header
   class='flex flex-row lg:justify-between justify-around w-full lg:w-[1020px] p-3 py-4 md:py-2 relative md:fixed top-0 animate-scroll-blur [animation-timeline:scroll()] [animation-range:0_900px] z-20'
 >
@@ -14,9 +21,9 @@
   <nav
     class='flex flex-row items-center gap-6 [&>a]:sm:text-base [&>a]:text-sm'
   >
-    <a href='/#experiencia'>Experiencia</a>
-    <a href='/#proyectos'>Proyectos</a>
-    <a href='/#sobre-mi'>Sobre mí</a>
-    <a href='/#contacto'>Contacto</a>
+    <a href='/#experiencia'>{t('nav.experience')}</a>
+    <a href='/#proyectos'>{t('nav.projects')}</a>
+    <a href='/#sobre-mi'>{t('nav.about')}</a>
+    <a href='/#contacto'>{t('nav.contact')}</a>
   </nav>
 </header>
