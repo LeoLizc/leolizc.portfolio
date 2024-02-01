@@ -4,6 +4,7 @@ import Header from '@components/Header.astro';
 import { DEFAULT_LOCALE } from '@i18n/index';
 // import { ViewTransitions } from 'astro:transitions';
 import '@fontsource-variable/onest';
+import I18NTags from '@components/I18NTags.astro';
 
 interface Props {
   title: string;
@@ -44,19 +45,28 @@ const local = Astro.currentLocale ?? DEFAULT_LOCALE;
 <!doctype html>
 <html lang={local} class='dark'>
   <head>
+    <!-- Description -->
     <meta charset='UTF-8' />
+    <title>{title}</title>
     <meta name='description' content={description} />
-    <meta name='robots' content='index, follow' />
+    <meta name='author' content='Leonardo Lizcano' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta
       name='keywords'
       content='Portfolio, Leonardo Lizcano, LeoLizc, desarrollo web'
     />
-    <meta name='author' content='Leonardo Lizcano' />
+    <!-- Description -->
+    <!-- Meta -->
+    <meta name='robots' content='index, follow' />
     <meta name='theme-color' content='#8f7ada' />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
-    <title>{title}</title>
+    <!-- Meta -->
+    <!-- i18n -->
+    <I18NTags />
+    <!-- i18n -->
+    <!-- Open Graph -->
+    <!-- Open Graph -->
     <!-- <ViewTransitions /> -->
   </head>
   <body
@@ -69,30 +79,31 @@ const local = Astro.currentLocale ?? DEFAULT_LOCALE;
     <Header />
     <slot />
     <Footer />
-  </body><style is:global>
-    :root {
-      color-scheme: light dark;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      display: flex;
-      position: relative;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 100dvh;
-      font-family: 'Onest Variable', sans-serif;
-      /* padding: 0.75rem; */
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
+    <style is:global>
+      :root {
+        color-scheme: light dark;
       }
-    }
-  </style>
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100dvh;
+        font-family: 'Onest Variable', sans-serif;
+        /* padding: 0.75rem; */
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </body>
 </html>

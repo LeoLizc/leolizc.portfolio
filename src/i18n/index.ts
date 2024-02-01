@@ -5,7 +5,6 @@ export enum LOCALS {
   Spanish = 'es',
   English = 'en',
 };
-type Locales = keyof typeof LOCALS;
 
 export const DEFAULT_LOCALE = LOCALS.Spanish;
 

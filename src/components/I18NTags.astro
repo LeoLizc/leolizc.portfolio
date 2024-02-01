@@ -1,0 +1,32 @@
+---
+import { getExtraLanguages, getPath } from '@i18n/utils';
+import { DEFAULT_LOCALE } from '@i18n/index';
+
+const path = getPath(Astro);
+const hostname = Astro.url.hostname;
+const extraLanguages = getExtraLanguages();
+---
+
+{
+  extraLanguages.map((lang) => {
+    return (
+      <link
+        rel='alternate'
+        hreflang={lang}
+        href={`https://${hostname}/${lang}/${path}`}
+      />
+    );
+  })
+}
+<link
+  rel='alternate'
+  hreflang='x-default'
+  href={`https://${hostname}/${path}`}
+/>
+<link
+  rel='alternate'
+  hreflang={DEFAULT_LOCALE}
+  href={`https://${hostname}/${path}`}
+/>
+
+<link rel='canonical' href={`${Astro.url.href}`} />

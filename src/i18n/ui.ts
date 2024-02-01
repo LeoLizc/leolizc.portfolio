@@ -1,4 +1,4 @@
-import { DEFAULT_LOCALE as defaultLang, locales, LOCALS } from './index';
+import { DEFAULT_LOCALE as defaultLang } from './index';
 
 
 export const ui = {
