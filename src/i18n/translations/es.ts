@@ -32,6 +32,49 @@ Me encargué de *diseñar* y servir el sistema basado en **Sockets** para orques
 Apoyé y resolví dudas a los estidantes acerca de el desarrollo de aplicaciones web con **Flask, Html y Sq-Lite**`,
       },
     ],
+    PROJECTS:{
+      "eyeland": {
+        "title": "Epics - Eyeland",
+        "url": "https://eyeland-project.github.io/webpage/",
+        "role": "Desarrollador - Backend",
+        "imageSrc": "/imgs/Eyeland_shots_so.webp",
+        "imageAlt": "Página web de Eyeland",
+        "description": "Programa educativo para estudiantes de secundaria para la construcción de aplicaciones móviles para promover la inclusión de personas con discapacidad visual."
+      },
+      "parche": {
+        "title": "Proyecto Parche",
+        "url": "https://github.com/LeoLizc/f_parche",
+        "role": "Co-Autor",
+        "imageSrc": "/imgs/Parche_shots_so.webp",
+        "imageAlt": "Captura de la pantalla principal de la aplicación",
+        "description": "Aplicación para salidas grupales, optimizando coordinación, puntualidad y diversión en ciudades."
+      },
+      "rocket": {
+        "title": "Simulador de Cohete",
+        "url": "https://github.com/LeoLizc/Processing-Physic-Rocket",
+        "role": "Autor",
+        "imageSrc": "Needs image",
+        "imageAlt": "Simulador de cohete en Java Processing con físicas realistas.",
+        "description": "Simulador de cohete en Java Processing con físicas realistas. Modelos, océano y cámara 3D hechos desde cero en Processing."
+      },
+      "simet": {
+        "title": "APELL - Simet",
+        "url": "https://simet.co/home/landing",
+        "role": "Voluntario - Backend",
+        "imageSrc": "/imgs/Simet_shots_so.webp",
+        "imageAlt": "Página web de APELL - Simet",
+        "description": "Página web que refuerza la ayuda mutua en emergencias industriales a través de una red de empresas."
+      },
+      "bungee": {
+        "title": "Simulador de Bungee Jumping",
+        "url": "https://github.com/leovergaramarq/BungeeJumpingSimulator",
+        "role": "Co-Autor",
+        "imageSrc": "/imgs/Bungee_shots_so.webp",
+        "imageAlt": "Captura de pantalla de visualización de gráficas del simulador",
+        "description": "Simulador del deporte de riesgo Bungee Jumping basado en la física del Movimiento Libre Amortiguado involucrado en esta actividad. Proyecto creado únicamente con fines académicos."
+      }
+      
+    }    
   }
 };
 
