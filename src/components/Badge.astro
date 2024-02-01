@@ -1,4 +1,5 @@
 ---
+import { twMerge } from 'tailwind-merge';
 interface Props {
   isStatic?: boolean;
   class?: string;
@@ -13,9 +14,12 @@ const { class: className = '', isStatic = false } = Astro.props;
 ---
 
 <span
-  class={`inline-flex items-center bg-cyan-100 text-cyan-800 text-xs font-medium px-2.5 py-0.5 rounded-full whitespace-nowrap ${
-    onStaticClasses[+isStatic]
-  } dark:text-cyan-200 drop-shadow-hilight-md ${className}`}
+  class={twMerge(
+    `inline-flex items-center bg-cyan-100 text-cyan-800 text-xs font-medium px-2.5 py-0.5 rounded-full whitespace-nowrap ${
+      onStaticClasses[+isStatic]
+    } dark:text-cyan-200 drop-shadow-hilight-md`,
+    className,
+  )}
 >
   {!isStatic && <span class='w-2 h-2 me-1 bg-cyan-500 rounded-full' />}
   <slot /></span
