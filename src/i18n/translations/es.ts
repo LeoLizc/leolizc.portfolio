@@ -78,8 +78,16 @@ Apoyé y resolví dudas a los estidantes acerca de el desarrollo de aplicaciones
 
 Durante mi formación, participé en eventos como *Expofísica*, con un simulador de físicas realistas. También destacé en **maratones de programación** en la institución, y tuve la oportunidad de participar en iniciativas apoyadas por la universidad.
     
-A nivel personal, me fascinan la **automatización** y la **inteligencia artificial**. He desarrollado proyectos para *controlar* partes de mi casa con un **asistente virtual**. Además, disfruto desarrollando **mods** y explorando nuevos hobbies como **tallar madera**.`    
-  }
+A nivel personal, me fascinan la **automatización** y la **inteligencia artificial**. He desarrollado proyectos para *controlar* partes de mi casa con un **asistente virtual**. Además, disfruto desarrollando **mods** y explorando nuevos hobbies como **tallar madera**.`,
+    CONTACT: {
+      SUBJECT_LABEL: 'Asunto',
+      SUBJECT_PLACEHOLDER: 'Escribe aquí el asunto',
+      EMAIL_LABEL: 'Correo',
+      EMAIL_PLACEHOLDER: 'Escribe aquí tu correo',
+      DETAILS_PLACEHOLDER: 'Escribe los detalles...',
+      SEND: 'Enviar',
+    },    
+  },
 };
 
 export type Lang = typeof es;

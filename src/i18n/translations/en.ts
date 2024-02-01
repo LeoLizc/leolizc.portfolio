@@ -82,6 +82,14 @@ Throughout my education, I participated in events like *Expofísica* with a real
     
 On a personal level, I am fascinated by **automation** and **artificial intelligence**. I've worked on projects to *control* parts of my house with a **virtual assistant**. Additionally, I enjoy developing **mods** and exploring new hobbies like **wood carving**.
 `,
+    CONTACT: {
+      SUBJECT_LABEL: 'Subject',
+      SUBJECT_PLACEHOLDER: 'Enter your subject here',
+      EMAIL_LABEL: 'Email',
+      EMAIL_PLACEHOLDER: 'Enter your email',
+      DETAILS_PLACEHOLDER: 'Enter your message',
+      SEND: 'Send',
+    },
   }
 }
 
