@@ -1,6 +1,7 @@
 ---
 import { parse } from 'marked';
 import Badge from './Badge.astro';
+import useI18N from '@i18n/index';
 
 type Props = {
   title: string;
@@ -11,6 +12,7 @@ type Props = {
 };
 
 const { title, date, description, link, latest } = Astro.props;
+const { EXP_ITEM_GOTO, EXP_ITEM_RECENT } = useI18N(Astro);
 ---
 
 <span
@@ -35,7 +37,7 @@ const { title, date, description, link, latest } = Astro.props;
   {
     latest && (
       <Badge class='ms-3 hidden md:block' isStatic>
-        Más reciente
+        {EXP_ITEM_RECENT}
       </Badge>
     )
   }
@@ -74,7 +76,7 @@ const { title, date, description, link, latest } = Astro.props;
           d='M5 12h14M5 12l4-4m-4 4 4 4'
         />
       </svg>
-      Ir a ver
+      {EXP_ITEM_GOTO}
     </a>
   )
 }
