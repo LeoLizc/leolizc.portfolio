@@ -73,8 +73,12 @@ Apoyé y resolví dudas a los estidantes acerca de el desarrollo de aplicaciones
         "imageAlt": "Captura de pantalla de visualización de gráficas del simulador",
         "description": "Simulador del deporte de riesgo Bungee Jumping basado en la física del Movimiento Libre Amortiguado involucrado en esta actividad. Proyecto creado únicamente con fines académicos."
       }
-      
-    }    
+    },
+    ABOUT_ME: `Mi interés por la programación surgió en la secundaria, cuando desarrollé un sistema de inventario en **VBA** y, recientemente, he completado mis estudios de pregrado en **Ingeniería de Sistemas** en la *Universidad del Norte*.
+
+Durante mi formación, participé en eventos como *Expofísica*, con un simulador de físicas realistas. También destacé en **maratones de programación** en la institución, y tuve la oportunidad de participar en iniciativas apoyadas por la universidad.
+    
+A nivel personal, me fascinan la **automatización** y la **inteligencia artificial**. He desarrollado proyectos para *controlar* partes de mi casa con un **asistente virtual**. Además, disfruto desarrollando **mods** y explorando nuevos hobbies como **tallar madera**.`    
   }
 };
 

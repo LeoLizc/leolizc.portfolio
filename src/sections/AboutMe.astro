@@ -1,11 +1,7 @@
 ---
+import useI18N from '@i18n/index';
 import { parse } from 'marked';
-const content = `Mi interés por la programación surgió en la secundaria, cuando desarrollé un sistema de inventario en **VBA** y, recientemente, he completado mis estudios de pregrado en **Ingeniería de Sistemas** en la *Universidad del Norte*.
-
-Durante mi formación, participé en eventos como *Expofísica*, con un simulador de físicas realistas. También destacé en **maratones de programación** en la institución, y tuve la oportunidad de participar en iniciativas apoyadas por la universidad.
-
-A nivel personal, me fascinan la **automatización** y la **inteligencia artificial**. He desarrollado proyectos para *controlar* partes de mi casa con un **asistente virtual**. Además, disfruto desarrollando **mods** y explorando nuevos hobbies como **tallar madera**.
-`;
+const { ABOUT_ME: content, PHOTO_ALT } = useI18N(Astro).main;
 // Second paragraph: , principalmente como **desarrollador de Backend**
 // Third paragraph: Estoy siempre en busca de nuevas experiencias.
 ---
@@ -20,7 +16,7 @@ A nivel personal, me fascinan la **automatización** y la **inteligencia artific
       width='200'
       height='200'
       src='/imgs/avatar.webp'
-      alt='Foto de Leo'
+      alt={PHOTO_ALT}
       loading='lazy'
       decoding='async'
       style={{ shapeOutside: 'circle(20%)' }}
@@ -28,7 +24,7 @@ A nivel personal, me fascinan la **automatización** y la **inteligencia artific
     <div
       class='absolute top-0 left-0 rounded-full size-60 bg-gradient-to-br from-[#0093E9] to-[#80D0C7] -rotate-y-180 transition-transform duration-500 [#luSecret:checked+label_&]:rotate-y-0 [backface-visibility:hidden] text-center py-4 px-4 flex justify-center items-center'
     >
-      También tengo a la mejor amiga del mundo, es un secreto a voces 🤫
+      🌻También tengo a la mejor amiga del mundo, es un secreto a voces 🤫
     </div>
   </label>
   <div

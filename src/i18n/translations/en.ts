@@ -75,7 +75,13 @@ I supported and solved doubts for students about the development of web applicat
         imageAlt: "Bungee Jumping Simulator",
         description: "Simulator of the risk sport Bungee Jumping based on the physics of the Free Damped Motion involved in this activity. Project created for academic purposes only."
       },
-    }
+    },
+    ABOUT_ME:`My interest in programming sparked during high school when I developed an inventory system in **VBA**, and recently, I completed my undergraduate studies in **Systems Engineering** at *Universidad del Norte*.
+
+Throughout my education, I participated in events like *Expofísica* with a realistic physics simulator. I also excelled in **programming marathons** at the institution and had the opportunity to engage in university-supported initiatives.
+    
+On a personal level, I am fascinated by **automation** and **artificial intelligence**. I've worked on projects to *control* parts of my house with a **virtual assistant**. Additionally, I enjoy developing **mods** and exploring new hobbies like **wood carving**.
+`,
   }
 }
 
