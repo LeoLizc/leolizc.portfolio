@@ -1,4 +1,5 @@
-import es, {type Lang} from './translations/es'
+import es, {type Lang} from './translations/es';
+import en from './translations/en';
 
 export enum LOCALS {
   Spanish = 'es',
@@ -19,6 +20,8 @@ export default function useI18N({ currentLocale }: {currentLocale?: string}): La
   switch (currentLocale) {
     case LOCALS.Spanish:
       return es;
+    case LOCALS.English:
+      return en;
     default:
       return es;
   }
