@@ -3,12 +3,13 @@ import { useTranslations } from '@i18n/ui';
 
 const { currentLocale } = Astro;
 const t = useTranslations(currentLocale);
+const routeLocale = (currentLocale ?? 'es') === 'es' ? '' : `${currentLocale}/`;
 ---
 
 <header
   class='flex flex-row lg:justify-between justify-around w-full lg:w-[1020px] p-3 py-4 md:py-2 relative md:fixed top-0 animate-scroll-blur [animation-timeline:scroll()] [animation-range:0_900px] z-20'
 >
-  <a href='/#' class='hidden sm:block'>
+  <a href={`/${routeLocale}#`} class='hidden sm:block'>
     <img
       src='/imgs/avatar.webp'
       width='48'
@@ -21,9 +22,13 @@ const t = useTranslations(currentLocale);
   <nav
     class='flex flex-row items-center gap-6 [&>a]:sm:text-base [&>a]:text-sm'
   >
-    <a href='/#experiencia'>{t('nav.experience')}</a>
-    <a href='/#proyectos'>{t('nav.projects')}</a>
-    <a href='/#sobre-mi'>{t('nav.about')}</a>
-    <a href='/#contacto'>{t('nav.contact')}</a>
+    <a href={`/${routeLocale}#experiencia`}>
+      {t('nav.experience')}
+    </a>
+    <a href={`/${routeLocale}#proyectos`}>
+      {t('nav.projects')}
+    </a>
+    <a href={`/${routeLocale}#sobre-mi`}>{t('nav.about')}</a>
+    <a href={`/${routeLocale}#contacto`}>{t('nav.contact')}</a>
   </nav>
 </header>
