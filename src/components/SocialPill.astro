@@ -2,16 +2,17 @@
 interface Props {
   text: string;
   hiddenText?: string;
+  class?: string;
 }
 
-const { text, hiddenText } = Astro.props;
+const { text, hiddenText, class: className } = Astro.props;
 
 const defClassName =
   'bg-indigo-100 text-indigo-800 text-s font-medium py-0.5 rounded-md dark:bg-gray-700 dark:text-indigo-300';
 const hiddenClassName = 'px-2.5 border border-indigo-400';
 ---
 
-<div class='text-base badge me-2 pointer-events-[fill]'>
+<div class={`text-base badge me-2 pointer-events-[fill] ${className}`}>
   <span
     class={`${defClassName} ${hiddenClassName} px-2.5 visible-text${
       hiddenText == null ? ' ' : ' animated'

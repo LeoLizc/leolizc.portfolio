@@ -52,12 +52,16 @@ const { main } = useI18N(Astro);
           {main.PRESENTATION}
         </h2>
         <nav class='flex my-5 gap-2 flex-wrap'>
-          <SocialPill text='Email' hiddenText='leolizcanop@gmail.com'>
+          <SocialPill
+            text='Email'
+            hiddenText='leolizcanop@gmail.com'
+            class='z-20'
+          >
             <MailIcon slot='icon' />
           </SocialPill>
           <a
             href='https://www.linkedin.com/in/leonardo-lizcano-pinto0220/'
-            class='flex items-center hover:scale-105 transition'
+            class='flex items-center hover:scale-105 transition z-10'
             target='_blank'
             rel='noreferrer noopener'
           >
@@ -67,7 +71,7 @@ const { main } = useI18N(Astro);
           </a>
           <a
             href='https://github.com/LeoLizc'
-            class='flex items-center hover:scale-105 transition'
+            class='flex items-center hover:scale-105 transition z-0'
             target='_blank'
             rel='noreferrer noopener'
           >
