@@ -18,6 +18,7 @@ export const ui = {
     'nav.about': 'Sobre mí',
     'nav.contact': 'Contacto',
     'footer.copy': 'LeoLizc. Casi todos los derechos reservados',
+    'footer.contact': 'Contáctame',
   },
   en: {
     'nav.experience': 'Experience',
@@ -25,6 +26,7 @@ export const ui = {
     'nav.about': 'About me',
     'nav.contact': 'Contact',
     'footer.copy': 'LeoLizc. Almost all rights reserved',
+    'footer.contact': 'Contact me',
   },
 } as const;
 
