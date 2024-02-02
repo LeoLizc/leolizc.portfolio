@@ -1,7 +1,8 @@
 ---
 import { LANGUAGES } from '@i18n/ui';
-import { useRelativeUrl, getRelativePath } from '@i18n/utils';
+import { getRelativePath, useRelativeUrl } from '@i18n/utils';
 import { twMerge } from 'tailwind-merge';
+import WorldIcon from '@icons/WorldIcon.astro';
 const { class: className } = Astro.props;
 
 const currentLanguage = LANGUAGES[Astro.currentLocale ?? 'es'];
@@ -19,9 +20,10 @@ const translatePath = useRelativeUrl(Astro.currentLocale);
   <!-- <div class='relative'> -->
   <button
     id='lang-sel'
-    class='bg-slate-500/15 focus:py-2 py-3 px-1 rounded-r-md relative group'
+    class='bg-slate-500/15 focus:py-2 py-3 px-1 rounded-r-md group'
   >
-    <span class='block group-focus:rotate-90'>▶</span>
+    <WorldIcon />
+    <span class='block group-focus:rotate-90 pr-px'>▶</span>
   </button>
   <ul
     class='[#lang-sel:focus+&]:block [#lang-sel:focus+&]:animate-fade-down [#lang-sel:focus+&]:animate-duration-400 [#lang-sel:focus+&]:animate-delay-[210ms]'
@@ -47,9 +49,12 @@ const translatePath = useRelativeUrl(Astro.currentLocale);
 
 <style>
   button {
-    width: 24px;
+    width: 48px;
     transition-property: padding, width;
     transition-duration: 350ms;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
   }
 
   button:focus {
