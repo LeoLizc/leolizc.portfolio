@@ -1,5 +1,15 @@
 import { DEFAULT_LOCALE as defaultLang } from './index';
 
+export const LANGUAGES: Record<string, {label: string, code: string}> = {
+  es: {
+    label: 'Español',
+    code: 'es',
+  },
+  en: {
+    label: 'English',
+    code: 'en',
+  },
+}
 
 export const ui = {
   es: {

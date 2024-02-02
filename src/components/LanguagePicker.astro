@@ -1,0 +1,86 @@
+---
+import { LANGUAGES } from '@i18n/ui';
+import { useRelativeUrl, getRelativePath } from '@i18n/utils';
+import { twMerge } from 'tailwind-merge';
+const { class: className } = Astro.props;
+
+const currentLanguage = LANGUAGES[Astro.currentLocale ?? 'es'];
+const otherLanguages = Object.values(LANGUAGES).filter(
+  (lang) => lang.code !== currentLanguage.code,
+);
+
+const currentRelativeUrl = getRelativePath(Astro);
+
+const translatePath = useRelativeUrl(Astro.currentLocale);
+// ▼▽ ▶▷
+---
+
+<div class={twMerge('fixed top-32 left-0 select-none z-50', className)}>
+  <!-- <div class='relative'> -->
+  <button
+    id='lang-sel'
+    class='bg-slate-500/15 focus:py-2 py-3 px-1 rounded-r-md relative group'
+  >
+    <span class='block group-focus:rotate-90'>▶</span>
+  </button>
+  <ul
+    class='[#lang-sel:focus+&]:block [#lang-sel:focus+&]:animate-fade-down [#lang-sel:focus+&]:animate-duration-400 [#lang-sel:focus+&]:animate-delay-[210ms]'
+  >
+    <li class='bg-gray-600/50 border-[1px] border-white/30'>
+      {currentLanguage.label}
+    </li>
+    {
+      otherLanguages.map((lang) => (
+        <a
+          class=''
+          href={translatePath(currentRelativeUrl, lang.code)}
+          aria-label={`Translate to ${lang.label}`}
+          title={`Translate to ${lang.label}`}
+        >
+          <li class='bg-slate-700/40 hover:bg-slate-700/70'>{lang.label}</li>
+        </a>
+      ))
+    }
+  </ul>
+  <!-- </div> -->
+</div>
+
+<style>
+  button {
+    width: 24px;
+    transition-property: padding, width;
+    transition-duration: 350ms;
+  }
+
+  button:focus {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    /* min-width: 67px; */
+  }
+
+  span {
+    transition-duration: 400ms;
+  }
+
+  ul {
+    display: none;
+    margin-top: 10px;
+    margin-left: 0.5rem;
+    /* position: absolute;
+    bottom: -100%; */
+    /* background-color: red; */
+  }
+
+  li {
+    padding: 0.5rem 1rem;
+    /* background-color: rgb(30 64 175 / 0.15); */
+    border-radius: 0.125rem;
+    margin-bottom: 0.45rem;
+    /* width: 50px;
+    height: 50px; */
+  }
+
+  div:active ul {
+    display: block;
+  }
+</style>

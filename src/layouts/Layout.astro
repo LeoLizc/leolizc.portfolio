@@ -5,6 +5,7 @@ import { DEFAULT_LOCALE } from '@i18n/index';
 // import { ViewTransitions } from 'astro:transitions';
 import '@fontsource-variable/onest';
 import I18NTags from '@components/I18NTags.astro';
+import LanguagePicker from '@components/LanguagePicker.astro';
 
 interface Props {
   title: string;
@@ -78,6 +79,8 @@ const local = Astro.currentLocale ?? DEFAULT_LOCALE;
     >
     </div>
     <Header />
+    <LanguagePicker class='' />
+
     <slot />
     <Footer />
     <style is:global>
