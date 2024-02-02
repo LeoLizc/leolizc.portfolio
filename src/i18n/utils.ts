@@ -5,15 +5,15 @@ export function getExtraLanguages(){
 }
 
 export function useRelativeUrl(locale: string=DEFAULT_LOCALE){
-  if (!locales.includes(locale as any)) locale = DEFAULT_LOCALE;
-  if (locale === DEFAULT_LOCALE) locale = '';
-  else locale = `/${locale}`;
-  return function(path: string){
-    return `${locale}/${path}`;
+  return function(path: string, loc: string=locale){
+    if (!locales.includes(loc as any)) loc = DEFAULT_LOCALE;
+    if (loc === DEFAULT_LOCALE) loc = '';
+    else loc = `/${loc}`;
+    return `${loc}/${path}`;
   }
 }
 
-export function getPath({url}: {url: URL}){
+export function getRelativePath({url}: {url: URL}){
   let path = url.pathname.split('/').filter(Boolean);
   // remove domain
   path.shift();
