@@ -16,17 +16,22 @@ const translatePath = useRelativeUrl(Astro.currentLocale);
 // ▼▽ ▶▷
 ---
 
-<div class={twMerge('fixed top-32 left-0 select-none z-50', className)}>
+<button
+  class={twMerge(
+    'fixed top-32 left-0 select-none z-50 cursor-default group',
+    className,
+  )}
+>
   <!-- <div class='relative'> -->
-  <button
+  <div
     id='lang-sel'
-    class='bg-slate-500/15 focus:py-2 py-3 px-1 rounded-r-md group'
+    class='bg-slate-500/15 focus:py-2 py-3 px-1 rounded-r-md cursor-pointer'
   >
     <WorldIcon />
     <span class='block group-focus:rotate-90 pr-px'>▶</span>
-  </button>
+  </div>
   <ul
-    class='[#lang-sel:focus+&]:block [#lang-sel:focus+&]:animate-fade-down [#lang-sel:focus+&]:animate-duration-400 [#lang-sel:focus+&]:animate-delay-[210ms]'
+    class='group-focus:block group-focus:animate-fade-down group-focus:animate-duration-400 group-focus:animate-delay-[210ms]'
   >
     <li class='bg-gray-600/50 border-[1px] border-white/30'>
       {currentLanguage.label}
@@ -45,10 +50,10 @@ const translatePath = useRelativeUrl(Astro.currentLocale);
     }
   </ul>
   <!-- </div> -->
-</div>
+</button>
 
 <style>
-  button {
+  div {
     width: 45px;
     transition-property: padding, width;
     transition-duration: 350ms;
@@ -58,7 +63,7 @@ const translatePath = useRelativeUrl(Astro.currentLocale);
     align-items: center;
   }
 
-  button:focus {
+  button:focus > div {
     padding: 0.5rem 1rem;
     width: 100%;
     /* min-width: 67px; */
@@ -86,7 +91,7 @@ const translatePath = useRelativeUrl(Astro.currentLocale);
     height: 50px; */
   }
 
-  div:active ul {
+  ul:active {
     display: block;
   }
 </style>
