@@ -4,7 +4,7 @@ const es = {
   main: {
     SEO: {
       title: 'Portfolio LeoLizc | Ingeniero de Sistemas',
-      description: 'Portafolio de Leonardo Lizcano, Ingeniero de Sistemas de la Universidad Nacional de Colombia',
+      description: 'Portafolio de Leonardo Lizcano, Ingeniero de Sistemas por la Universidad del Norte, Colombia',
     },
     PHOTO_ALT: 'Foto de Leonardo Lizcano',
     TITLE: '¡Hola! Soy Leonardo',

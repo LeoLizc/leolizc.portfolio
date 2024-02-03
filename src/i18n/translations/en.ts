@@ -6,7 +6,7 @@ export const en: Lang = {
   main: {
     SEO: {
       title: "Portfolio LeoLizc | Software Engineer",
-      description: "Leonardo Lizcano's portfolio, Software Engineer from the National University of Colombia",
+      description: "Leonardo Lizcano's portfolio, Software Engineer from Universidad del Norte, Colombia",
     },
     PHOTO_ALT: "Leonardo Lizcano's photo",
     TITLE: "Hello! I'm Leonardo",
