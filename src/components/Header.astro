@@ -1,6 +1,6 @@
 ---
 import { useTranslations } from '@i18n/ui';
-
+import LogoIcon from './icons/LogoIcon.astro';
 const { currentLocale } = Astro;
 const t = useTranslations(currentLocale);
 const routeLocale = (currentLocale ?? 'es') === 'es' ? '' : `${currentLocale}/`;
@@ -10,14 +10,7 @@ const routeLocale = (currentLocale ?? 'es') === 'es' ? '' : `${currentLocale}/`;
   class='flex flex-row lg:justify-between justify-around w-full lg:w-[1020px] p-3 py-4 md:py-2 relative md:fixed top-0 animate-scroll-blur [animation-timeline:scroll()] [animation-range:0_900px] z-20 rounded-b-lg'
 >
   <a href={`/${routeLocale}#`} class='hidden sm:block'>
-    <img
-      src='/imgs/avatar.webp'
-      width='48'
-      height='48'
-      alt='avatar'
-      loading='lazy'
-      decoding='async'
-    />
+    <LogoIcon width='48' stroke='#5cbeff' />
   </a>
   <nav
     class='flex flex-row items-center gap-6 [&>a]:sm:text-base [&>a]:text-sm'
