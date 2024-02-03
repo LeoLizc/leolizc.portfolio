@@ -5,8 +5,17 @@ export const en: Lang = {
   EXP_ITEM_RECENT: "Most recent",
   main: {
     SEO: {
-      title: "Portfolio LeoLizc | Software Engineer",
-      description: "Leonardo Lizcano's portfolio, Software Engineer from Universidad del Norte, Colombia",
+      title: "Leonardo Lizcano | Software Engineer's Portfolio",
+      description: "Leonardo Lizcano's portfolio, Software Engineer from Universidad del Norte, Colombia since 2023",
+      KEY_WORDS: "Leonardo Lizcano, Leonardo David Lizcano Pinto, Software Engineer, Web Developer, Backend, Artificial Intelligence, Colombia, Barranquilla, Universidad del Norte",
+      OG: {
+        title: "Leonardo Lizcano | Software Engineer's Portfolio",
+        description: "Leonardo Lizcano's portfolio, Software Engineer from Universidad del Norte, Colombia. Get more information about his projects and experience in development.",
+      },
+      TWITTER: {
+        title: "Leonardo Lizcano | Software Engineer's Portfolio",
+        description: "Leonardo Lizcano's portfolio, Software Engineer from Universidad del Norte, Colombia. Get more information about his projects and experience in development.",
+      },
     },
     PHOTO_ALT: "Leonardo Lizcano's photo",
     TITLE: "Hello! I'm Leonardo",

@@ -19,7 +19,11 @@ import useI18N from '@i18n/index';
 const { main } = useI18N(Astro);
 ---
 
-<Layout title={main.SEO.title} description={main.SEO.description}>
+<Layout
+  title={main.SEO.title}
+  description={main.SEO.description}
+  keywords={main.SEO.KEY_WORDS}
+>
   <main class=''>
     <SectionLayout
       class='md:pt-52 md:!pb-32 !h-[90svh] md:!h-[100svh] flex items-center'

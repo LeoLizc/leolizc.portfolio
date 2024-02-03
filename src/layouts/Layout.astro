@@ -10,9 +10,10 @@ import LanguagePicker from '@components/LanguagePicker.astro';
 interface Props {
   title: string;
   description: string;
+  keywords?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, keywords } = Astro.props;
 
 // export const viewPort: Viewport = {
 //   themeColor: '#8f7ada',
@@ -55,7 +56,8 @@ const local = Astro.currentLocale ?? DEFAULT_LOCALE;
     <link rel='icon' type='image/svg+xml' href='/favicon.svg?v=2' />
     <meta
       name='keywords'
-      content='Portfolio, Leonardo Lizcano, LeoLizc, desarrollo web'
+      content={keywords ??
+        'Portfolio, Leonardo Lizcano, LeoLizc, desarrollo web'}
     />
     <!-- Description -->
     <!-- Meta -->
