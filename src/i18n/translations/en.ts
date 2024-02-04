@@ -3,6 +3,18 @@ import {type Lang} from './es'
 export const en: Lang = {
   EXP_ITEM_GOTO: "Go to see",
   EXP_ITEM_RECENT: "Most recent",
+  SOCIAL_DEFAULTS: {
+    OG: {
+      title: "Leonardo Lizcano's webpage",
+      description: "Leonardo Lizcano's webpage, Colombia. Get more information by clicking here.",
+      imageAlt: "Image of Leonardo Lizcano's webpage",
+    },
+    TWITTER: {
+      title: "Leonardo Lizcano's webpage",
+      description: "Leonardo Lizcano's webpage, Colombia. Get more information by clicking here.",
+      imageAlt: "Image of Leonardo Lizcano's webpage",
+    }
+  },
   main: {
     SEO: {
       title: "Leonardo Lizcano | Software Engineer's Portfolio",

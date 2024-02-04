@@ -1,6 +1,18 @@
 const es = {
   EXP_ITEM_GOTO: 'Ir a ver',
   EXP_ITEM_RECENT: 'Más reciente',
+  SOCIAL_DEFAULTS: {
+    OG: {
+      title: 'Página web de Leonardo Lizcano',
+      description: 'Pagina web de Leonardo Lizcano Pinto, Colombia. Obten más información haciendo clic aquí.',
+      imageAlt: 'Imagen de la página web de Leonardo Lizcano',
+    },
+    TWITTER: {
+      title: 'Página web de Leonardo Lizcano',
+      description: 'Pagina web de Leonardo Lizcano Pinto, Colombia. Obten más información haciendo clic aquí.',
+      imageAlt: 'Imagen de la página web de Leonardo Lizcano',
+    }
+  },
   main: {
     SEO: {
       title: 'Leonardo Lizcano | Portfolio de Ingeniero de Sistemas',
