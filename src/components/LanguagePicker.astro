@@ -28,10 +28,17 @@ const translatePath = useRelativeUrl(Astro.currentLocale);
     class='bg-slate-500/15 focus:py-2 py-3 px-1 rounded-r-md cursor-pointer'
   >
     <WorldIcon />
-    <span class='block group-focus:rotate-90 pr-px'>▶</span>
+    <!-- <span class='block group-focus:rotate-90 pr-px'>▶</span> -->
   </div>
   <ul
-    class='group-focus:block group-focus:animate-fade-down group-focus:animate-duration-400 group-focus:animate-delay-[210ms]'
+    class:list={[
+      'group-focus:block',
+      // 'group-focus:flex-col',
+      // 'group-focus:justify-center',
+      'group-focus:animate-fade-down',
+      'group-focus:animate-duration-400',
+      'group-focus:animate-delay-[210ms]',
+    ]}
   >
     <li class='bg-gray-600/70 border-2 border-white/30'>
       {currentLanguage.label}
@@ -82,6 +89,7 @@ const translatePath = useRelativeUrl(Astro.currentLocale);
     display: none;
     margin-top: 10px;
     margin-left: 0.5rem;
+    margin-right: 0.25rem;
     /* position: absolute;
     bottom: -100%; */
     /* background-color: red; */
