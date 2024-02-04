@@ -6,6 +6,7 @@ import { DEFAULT_LOCALE } from '@i18n/index';
 import '@fontsource-variable/onest';
 import I18NTags from '@components/SEO/I18NTags.astro';
 import LanguagePicker from '@components/LanguagePicker.astro';
+import SocialTags from '@components/SEO/SocialTags.astro';
 
 interface Props {
   title: string;
@@ -59,18 +60,17 @@ const local = Astro.currentLocale ?? DEFAULT_LOCALE;
       content={keywords ??
         'Portfolio, Leonardo Lizcano, LeoLizc, desarrollo web'}
     />
-    <!-- Description -->
     <!-- Meta -->
     <meta name='robots' content='index, follow' />
     <meta name='theme-color' content='#8f7ada' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
-    <!-- Meta -->
     <!-- i18n -->
     <I18NTags />
-    <!-- i18n -->
-    <!-- Open Graph -->
-    <!-- Open Graph -->
+    <!-- Social Tags -->
+    <slot name='socials'>
+      <SocialTags />
+    </slot>
     <!-- <ViewTransitions /> -->
   </head>
   <body
