@@ -15,8 +15,18 @@ import Experience from '@sections/Experience.astro';
 import Projects from '@sections/Projects.astro';
 import Layout from '@layouts/Layout.astro';
 import useI18N from '@i18n/index';
+import SocialTags from '@components/SEO/SocialTags.astro';
 
 const { main } = useI18N(Astro);
+const openGraph = {
+  title: main.SEO.OG.title,
+  description: main.SEO.OG.description,
+};
+
+const twitterCard = {
+  title: main.SEO.TWITTER.title,
+  description: main.SEO.TWITTER.description,
+};
 ---
 
 <Layout
@@ -24,6 +34,7 @@ const { main } = useI18N(Astro);
   description={main.SEO.description}
   keywords={main.SEO.KEY_WORDS}
 >
+  <SocialTags slot='socials' OG={openGraph} TWITTER={twitterCard} />
   <main class=''>
     <SectionLayout
       class='md:pt-52 md:!pb-32 !h-[90svh] md:!h-[100svh] flex items-center'
