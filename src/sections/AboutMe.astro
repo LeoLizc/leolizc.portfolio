@@ -1,6 +1,8 @@
 ---
 import useI18N from '@i18n/index';
 import { parse } from 'marked';
+import meImage from '../assets/Me.jpg';
+import { Image } from 'astro:assets';
 const { ABOUT_ME: content, PHOTO_ALT } = useI18N(Astro).main;
 // Second paragraph: , principalmente como **desarrollador de Backend**
 // Third paragraph: Estoy siempre en busca de nuevas experiencias.
@@ -11,15 +13,19 @@ const { ABOUT_ME: content, PHOTO_ALT } = useI18N(Astro).main;
 >
   <input type='checkbox' name='luSecret' id='luSecret' class='hidden' />
   <label for='luSecret' class='rounded-full size-60 relative shrink-0 group'>
-    <img
+    <Image
       class='rounded-full size-60 absolute top-0 left-0 transition-transform duration-500 [#luSecret:checked+label_&]:rotate-y-180 [backface-visibility:hidden]'
-      width='200'
-      height='200'
-      src='/imgs/avatar.webp'
+      width='300'
+      height='300'
+      src={meImage}
       alt={PHOTO_ALT}
-      loading='lazy'
-      decoding='async'
-      style={{ shapeOutside: 'circle(20%)' }}
+      format='avif'
+      quality='high'
+      style={{
+        shapeOutside: 'circle(20%)',
+        objectFit: 'cover',
+        objectPosition: 'left -15px',
+      }}
     />
     <div
       class='absolute top-0 left-0 rounded-full size-60 bg-gradient-to-br from-[#0093E9] to-[#80D0C7] -rotate-y-180 transition-transform duration-500 [#luSecret:checked+label_&]:rotate-y-0 [backface-visibility:hidden] text-center py-4 px-4 flex justify-center items-center'
