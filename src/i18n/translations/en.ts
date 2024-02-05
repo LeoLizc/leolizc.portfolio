@@ -60,7 +60,6 @@ I supported and solved doubts for students about the development of web applicat
         title: "Epics - Eyeland",
         url: "https://eyeland-project.github.io/webpage/",
         role: "Backend Developer",
-        imageSrc: "/imgs/Eyeland_shots_so.webp",
         imageAlt: "Eyeland's webpage",
         description: "Educational program for high school students to build mobile applications to promote the inclusion of people with visual disabilities."
       },
@@ -68,7 +67,6 @@ I supported and solved doubts for students about the development of web applicat
         title: "Parche Project",
         url: "https://github.com/LeoLizc/f_parche",
         role: "Co-Author",
-        imageSrc: "/imgs/Parche_shots_so.webp",
         imageAlt: "Main screen of the application",
         description: "Application for group outings, optimizing coordination, punctuality and fun in cities."
       },
@@ -76,7 +74,6 @@ I supported and solved doubts for students about the development of web applicat
         title: "Rocket Simulator",
         url: "https://github.com/LeoLizc/Processing-Physic-Rocket",
         role: "Author",
-        imageSrc: "Need image",
         imageAlt: "Rocket simulator in Java Processing with realistic physics.",
         description: "Rocket simulator in Java Processing with realistic physics. Models, ocean and 3D camera made from scratch in Processing."
       },
@@ -84,7 +81,6 @@ I supported and solved doubts for students about the development of web applicat
         title: "APELL - Simet",
         url: "https://simet.co/home/landing",
         role: "Volunteer - Backend",
-        imageSrc: "/imgs/Simet_shots_so.webp",
         imageAlt: "APELL - Simet's webpage",
         description: "APELL - Simet is Website that reinforces mutual aid in industrial emergencies through a network of companies."
       },
@@ -92,7 +88,6 @@ I supported and solved doubts for students about the development of web applicat
         title: "Bungee Jumping Simulator",
         url: "https://github.com/leovergaramarq/BungeeJumpingSimulator",
         role: "Co-Author",
-        imageSrc: "/imgs/Bungee_shots_so.webp",
         imageAlt: "Bungee Jumping Simulator",
         description: "Simulator of the risk sport Bungee Jumping based on the physics of the Free Damped Motion involved in this activity. Project created for academic purposes only."
       },

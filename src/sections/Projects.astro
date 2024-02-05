@@ -1,6 +1,11 @@
 ---
 import BentoItem from '@components/BentoItem.astro';
 import useI18N from '@i18n/index';
+import bungeeImage from '../assets/Bungee_shots_so.webp';
+import eyelandImage from '../assets/Eyeland_shots_so.webp';
+import parcheImage from '../assets/Parche_shots_so.webp';
+import simetImage from '../assets/Simet_shots_so.webp';
+
 // #ff8836
 // #4d97ff
 const { PROJECTS: proj } = useI18N(Astro).main;
@@ -16,7 +21,7 @@ const { PROJECTS: proj } = useI18N(Astro).main;
     <BentoItem
       class='md:col-span-8 md:row-span-3 lg:row-span-3 [&_h3]:text-3xl [&_h3]:text-[#2acf76]'
       title={proj.eyeland.title}
-      imageSrc={proj.eyeland.imageSrc}
+      image={eyelandImage}
       imageAlt={proj.eyeland.imageAlt}
       subtitle={proj.eyeland.role}
       description={proj.eyeland.description}
@@ -32,7 +37,7 @@ const { PROJECTS: proj } = useI18N(Astro).main;
       class='md:col-span-4 md:row-span-3 lg:row-span-3 [&_p]:leading-snug [&_h3]:leading-tight [&_h3]:text-[#ff7e3d]'
       title={proj.parche.title}
       subtitle={proj.parche.role}
-      imageSrc={proj.parche.imageSrc}
+      image={parcheImage}
       imageAlt={proj.parche.imageAlt}
       description={proj.parche.description}
     />
@@ -59,7 +64,7 @@ const { PROJECTS: proj } = useI18N(Astro).main;
     <BentoItem
       class='md:col-span-7 [&_p]:leading-snug [&_h3]:font-bold [&_h3]:text-[#6ed16b]'
       title={proj.simet.title}
-      imageSrc={proj.simet.imageSrc}
+      image={simetImage}
       imageAlt={proj.simet.imageAlt}
       subtitle={proj.simet.role}
       description={proj.simet.description}
@@ -75,7 +80,7 @@ const { PROJECTS: proj } = useI18N(Astro).main;
       class='md:col-span-12 [&_h3]:text-2xl [&_p]:leading-snug [&_h3]:text-[#ff7a30]'
       title={proj.bungee.title}
       subtitle={proj.bungee.role}
-      imageSrc={proj.bungee.imageSrc}
+      image={bungeeImage}
       imageAlt={proj.bungee.imageAlt}
       description={proj.bungee.description}
     />
