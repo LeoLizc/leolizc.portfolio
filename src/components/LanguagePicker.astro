@@ -1,8 +1,10 @@
 ---
-import { LANGUAGES } from '@i18n/ui';
+import { LANGUAGES, useTranslations } from '@i18n/ui';
 import { getRelativePath, useRelativeUrl } from '@i18n/utils';
 import WorldIcon from '@icons/WorldIcon.astro';
 import { twMerge } from 'tailwind-merge';
+const { currentLocale } = Astro;
+const t = useTranslations(currentLocale);
 const { class: className } = Astro.props;
 
 const currentLanguage = LANGUAGES[Astro.currentLocale ?? 'es'];
@@ -21,11 +23,13 @@ const translatePath = useRelativeUrl(Astro.currentLocale);
     'fixed top-16 left-0 select-none z-50 cursor-default group',
     className,
   )}
+  aria-hidden='true'
 >
   <!-- <div class='relative'> -->
   <div
     id='lang-sel'
     class='bg-slate-500/15 focus:py-2 py-3 px-1 rounded-r-md cursor-pointer'
+    aria-label={t('change_language')}
   >
     <WorldIcon />
     <!-- <span class='block group-focus:rotate-90 pr-px'>▶</span> -->
