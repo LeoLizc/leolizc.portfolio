@@ -1,8 +1,8 @@
 ---
 import { LANGUAGES } from '@i18n/ui';
 import { getRelativePath, useRelativeUrl } from '@i18n/utils';
-import { twMerge } from 'tailwind-merge';
 import WorldIcon from '@icons/WorldIcon.astro';
+import { twMerge } from 'tailwind-merge';
 const { class: className } = Astro.props;
 
 const currentLanguage = LANGUAGES[Astro.currentLocale ?? 'es'];

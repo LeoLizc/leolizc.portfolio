@@ -1,23 +1,23 @@
 ---
 import Badge from '@components/Badge.astro';
+import SocialTags from '@components/SEO/SocialTags.astro';
 import SectionLayout from '@components/SectionLayout.astro';
 import SocialPill from '@components/SocialPill.astro';
-import MailUpIcon from '@icons/MailUpIcon.astro';
-import WritingIcon from '@icons/WritingIcon.astro';
+import useI18N from '@i18n/index';
 import BuildingIcon from '@icons/BuildingIcon.astro';
 import GithubIcon from '@icons/GithubIcon.astro';
 import LinkedInIcon from '@icons/LinkedInIcon.astro';
 import MailIcon from '@icons/MailIcon.astro';
+import MailUpIcon from '@icons/MailUpIcon.astro';
 import TerminalIcon from '@icons/TerminalIcon.astro';
+import WritingIcon from '@icons/WritingIcon.astro';
+import Layout from '@layouts/Layout.astro';
 import AboutMe from '@sections/AboutMe.astro';
 import ContactMe from '@sections/ContactMe.astro';
 import Experience from '@sections/Experience.astro';
 import Projects from '@sections/Projects.astro';
-import Layout from '@layouts/Layout.astro';
-import useI18N from '@i18n/index';
-import SocialTags from '@components/SEO/SocialTags.astro';
-import meImage from '../assets/Me.jpg';
 import { Image } from 'astro:assets';
+import meImage from '../assets/Me.jpg';
 
 const { main } = useI18N(Astro);
 const openGraph = {

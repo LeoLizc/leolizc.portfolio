@@ -1,5 +1,5 @@
-import es, {type Lang} from './translations/es';
 import en from './translations/en';
+import es, { type Lang } from './translations/es';
 
 export enum LOCALS {
   Spanish = 'es',

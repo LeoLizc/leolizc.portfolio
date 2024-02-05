@@ -1,6 +1,6 @@
-import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-import { locales, DEFAULT_LOCALE, fallback } from './src/i18n/index';
+import { defineConfig } from 'astro/config';
+import { DEFAULT_LOCALE, fallback, locales } from './src/i18n/index';
 
 const SITE_URL = "https://portfolio.leolizc.tech";
 
