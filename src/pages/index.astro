@@ -16,6 +16,8 @@ import Projects from '@sections/Projects.astro';
 import Layout from '@layouts/Layout.astro';
 import useI18N from '@i18n/index';
 import SocialTags from '@components/SEO/SocialTags.astro';
+import meImage from '../assets/Me.jpg';
+import { Image } from 'astro:assets';
 
 const { main } = useI18N(Astro);
 const openGraph = {
@@ -41,13 +43,19 @@ const twitterCard = {
     >
       <div>
         <a href='/#' class='sm:hidden block mb-3'>
-          <img
-            src='/imgs/avatar.webp'
-            width='43'
-            height='43'
+          <Image
+            src={meImage}
             alt={main.PHOTO_ALT}
-            loading='lazy'
-            decoding='async'
+            width='128'
+            height='128'
+            quality='mid'
+            format='avif'
+            style={{
+              borderRadius: '50%',
+              width: '60px',
+              height: '60px',
+              objectFit: 'cover',
+            }}
           />
         </a>
         <h1
