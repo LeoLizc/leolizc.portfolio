@@ -10,11 +10,7 @@ enc-type="text/plain"*/
 const { CONTACT: contact } = useI18N(Astro).main;
 ---
 
-<form
-  class='md:max-w-lg max-w-96 mx-auto mb-10'
-  action='/api/contact'
-  method='post'
->
+<form class='md:max-w-lg max-w-96 mx-auto mb-10'>
   <div class='mb-2'>
     <label
       for='name'
@@ -80,3 +76,24 @@ const { CONTACT: contact } = useI18N(Astro).main;
     >
   </div>
 </form>
+
+<script>
+  document
+    .querySelector('form')
+    ?.addEventListener('submit', async (e: SubmitEvent) => {
+      e.preventDefault();
+      const form = e.target;
+
+      if (!form) return;
+      if (!(form instanceof HTMLFormElement)) return;
+
+      const data = new FormData(form);
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        body: data,
+      });
+      if (response.ok) {
+        form.reset();
+      }
+    });
+</script>
