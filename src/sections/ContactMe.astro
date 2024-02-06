@@ -10,24 +10,34 @@ enc-type="text/plain"*/
 const { CONTACT: contact } = useI18N(Astro).main;
 ---
 
-<form class='md:max-w-lg max-w-96 mx-auto mb-10' action='/' method='post'>
+<form
+  class='md:max-w-lg max-w-96 mx-auto mb-10'
+  action='/api/contact'
+  method='post'
+>
+  <div class='mb-2'>
+    <label
+      for='name'
+      class='block mb-2 text-lg font-medium text-gray-900 dark:text-white/80'
+    >
+      {contact.NAME_LABEL}
+    </label>
+    <input
+      type='text'
+      id='name'
+      name='name'
+      class='bg-gray-50 border border-gray-300 text-gray-900 text-sm md:text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+      placeholder={contact.NAME_PLACEHOLDER}
+      required
+    />
+  </div>
   {
-    /* <div class="mb-5">
-        <label htmlFor="name" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white/80">Tu nombre</label>
+    /*  <div class="mb-5">
+        <label htmlFor="subject" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white/80">Email</label>
         <input
           type="text"
-          id="name"
-          name="name"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm md:text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          required
-        />
-      </div>
-      <div class="mb-5">
-        <label htmlFor="email" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white/80">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="mail"
+          id="subject"
+          name="subject"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm md:text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="example@example.ex"
           required
@@ -36,16 +46,16 @@ const { CONTACT: contact } = useI18N(Astro).main;
   }
   <div class='mb-5'>
     <label
-      for='subject'
+      for='email'
       class='block mb-2 text-lg font-medium text-gray-900 dark:text-white/80'
-      >{contact.SUBJECT_LABEL}</label
+      >{contact.EMAIL_LABEL}</label
     >
     <input
-      type='text'
-      id='subject'
-      name='subject'
+      type='email'
+      id='email'
+      name='email'
       class='bg-gray-50 border border-gray-300 text-gray-900 text-sm md:text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-      placeholder={contact.SUBJECT_PLACEHOLDER}
+      placeholder={contact.EMAIL_PLACEHOLDER}
       required
     />
   </div>
@@ -55,14 +65,6 @@ const { CONTACT: contact } = useI18N(Astro).main;
     rows={10}
     class='block p-2.5 w-full text-sm md:text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-5'
     placeholder={contact.DETAILS_PLACEHOLDER}></textarea>
-  {
-    /* <div class="flex items-start mb-5">
-        <div class="flex items-center h-5">
-          <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-        </div>
-        <label htmlFor="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
-      </div> */
-  }
   <div class='flex items-center gap-2'>
     <button
       type='submit'
