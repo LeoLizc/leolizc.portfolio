@@ -1,8 +1,9 @@
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from 'astro/config';
 import { DEFAULT_LOCALE, fallback, locales } from './src/i18n/index';
-
+import vercel from "@astrojs/vercel/serverless";
 const SITE_URL = "https://portfolio.leolizc.tech";
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,6 +12,8 @@ export default defineConfig({
   i18n: {
     locales: locales,
     defaultLocale: DEFAULT_LOCALE,
-    fallback: fallback,
+    fallback: fallback
   },
+  output: "hybrid",
+  adapter: vercel()
 });
