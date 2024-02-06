@@ -11,7 +11,7 @@ export const POST: APIRoute = async ({ request }) => {
   const formData = await request.formData();
   const name = formData.get('name');
   const email = formData.get('email');
-  const details = formData.get('details');
+  const details = formData.get('comment');
 
   try {
     const validatedData = contactFormSchema.parse({
@@ -21,7 +21,7 @@ export const POST: APIRoute = async ({ request }) => {
     });
 
     // Handle the form data and perform necessary operations with validatedData
-
+    console.log(validatedData);
     return new Response('Form submitted successfully');
   } catch (error) {
     return new Response('Invalid form data', { status: 400 });
