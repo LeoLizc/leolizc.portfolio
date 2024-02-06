@@ -5,10 +5,10 @@ interface Props {
   id?: string;
 }
 
-const { class: className = '', id = '', title } = Astro.props;
+const { class: className = '', id, title } = Astro.props;
 ---
 
-<section id={id} class={`w-full lg:w-[740px] py-16 px-4 pb-8 ${className}`}>
+<section {...{ id }} class={`w-full lg:w-[740px] py-16 px-4 pb-8 ${className}`}>
   {
     title && (
       <>
