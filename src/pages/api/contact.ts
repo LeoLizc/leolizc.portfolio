@@ -2,6 +2,8 @@ import type { APIRoute } from 'astro';
 import { z } from 'zod';
 import { Resend } from 'resend'
 
+export const prerender = false;
+
 const resend = new Resend(import.meta.env.RESEND_KEY ?? 'v1');
 
 const contactFormSchema = z.object({
