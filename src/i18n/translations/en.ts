@@ -105,6 +105,8 @@ On a personal level, I am fascinated by **automation** and **artificial intellig
       EMAIL_PLACEHOLDER: 'Enter your email',
       DETAILS_PLACEHOLDER: 'Enter your message',
       SEND: 'Send',
+      NAME_LABEL: 'Name',
+      NAME_PLACEHOLDER: 'Enter your name',
     },
   }
 }

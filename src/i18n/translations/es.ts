@@ -102,6 +102,8 @@ A nivel personal, me fascinan la **automatización** y la **inteligencia artific
       EMAIL_PLACEHOLDER: 'Escribe aquí tu correo',
       DETAILS_PLACEHOLDER: 'Escribe los detalles...',
       SEND: 'Enviar',
+      NAME_LABEL: 'Nombre',
+      NAME_PLACEHOLDER: 'Escribe aquí tu nombre',
     },    
   },
 };
