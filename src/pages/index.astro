@@ -3,8 +3,9 @@ import Badge from '@components/Badge.astro';
 import SocialTags from '@components/SEO/SocialTags.astro';
 import SectionLayout from '@components/SectionLayout.astro';
 import SocialPill from '@components/SocialPill.astro';
-import useI18N from '@i18n/index';
+import useI18N, { DEFAULT_LOCALE } from '@i18n/index';
 import BuildingIcon from '@icons/BuildingIcon.astro';
+import FileDownIcon from '@icons/FileDownIcon.astro';
 import GithubIcon from '@icons/GithubIcon.astro';
 import LinkedInIcon from '@icons/LinkedInIcon.astro';
 import MailIcon from '@icons/MailIcon.astro';
@@ -29,6 +30,8 @@ const twitterCard = {
   title: main.SEO.TWITTER.title,
   description: main.SEO.TWITTER.description,
 };
+
+const lang = Astro.currentLocale === DEFAULT_LOCALE ? '' : Astro.currentLocale;
 ---
 
 <Layout
@@ -100,6 +103,17 @@ const twitterCard = {
           >
             <SocialPill text='Github' hiddenText='Leolizc'>
               <GithubIcon slot='icon' />
+            </SocialPill>
+          </a>
+          <a
+            href={`https://cv.leolizc.tech/${lang}`}
+            class='flex items-center hover:scale-105 transition z-0'
+            target='_blank'
+            rel='noopener'
+            title=''
+          >
+            <SocialPill text='CV'>
+              <FileDownIcon slot='icon' />
             </SocialPill>
           </a>
         </nav>
