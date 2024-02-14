@@ -18,7 +18,7 @@ export const en: Lang = {
   main: {
     SEO: {
       title: "Leonardo Lizcano | Software Engineer's Portfolio",
-      description: "Leonardo Lizcano's portfolio, Software Engineer from Universidad del Norte, Colombia since 2023",
+      description: "Leonardo Lizcano's portfolio, alias LeoLizc. Software Engineer from Universidad del Norte, Colombia since 2023",
       KEY_WORDS: "Leonardo Lizcano, Leonardo David Lizcano Pinto, Software Engineer, Web Developer, Backend, Artificial Intelligence, Colombia, Barranquilla, Universidad del Norte",
       OG: {
         title: "Leonardo Lizcano | Software Engineer's Portfolio",

@@ -16,7 +16,7 @@ const es = {
   main: {
     SEO: {
       title: 'Leonardo Lizcano | Portfolio de Ingeniero de Sistemas',
-      description: 'Portafolio de Leonardo David Lizcano Pinto, Ingeniero de Sistemas por la Universidad del Norte, Colombia desde 2023',
+      description: 'Portafolio de Leonardo David Lizcano Pinto, alias LeoLizc. Ingeniero de Sistemas por la Universidad del Norte, Colombia desde 2023',
       KEY_WORDS: 'Leonardo Lizcano, Leonardo David Lizcano Pinto, Ingeniero de Sistemas, Desarrollador Web, Backend, Inteligencia Artificial, Colombia, Barranquilla, Universidad del Norte',
       OG:{
         title: 'Leonardo Lizcano | Portfolio de Ingeniero de Sistemas',
