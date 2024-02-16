@@ -8,7 +8,15 @@ const SITE_URL = "https://portfolio.leolizc.tech";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), sitemap()],
+  integrations: [tailwind(), sitemap({
+    i18n: {
+      defaultLocale: 'es',
+      locales: {
+        en: 'en-US',
+        es: 'es',
+      },
+    },
+  })],
   site: SITE_URL,
   i18n: {
     locales: locales,
