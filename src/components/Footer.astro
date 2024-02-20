@@ -19,7 +19,7 @@ const routeLocale = (currentLocale ?? 'es') === 'es' ? '' : `${currentLocale}/`;
     ]}
   >
     <section>
-      <h3>Recursos</h3>
+      <h3>{t('footer.title.resources')}</h3>
       <ul>
         <li><a href='https://tabler.io/icons'>Tabler Icons</a></li>
         <li><a href='https://fontsource.org'>Font Source</a></li>
@@ -27,7 +27,7 @@ const routeLocale = (currentLocale ?? 'es') === 'es' ? '' : `${currentLocale}/`;
       </ul>
     </section>
     <section>
-      <h3>Contáctame</h3>
+      <h3>{t('footer.title.contact')}</h3>
       <ul>
         <li>
           <a href='https://www.linkedin.com/in/leonardo-lizcano-pinto0220/'
@@ -43,7 +43,7 @@ const routeLocale = (currentLocale ?? 'es') === 'es' ? '' : `${currentLocale}/`;
       </ul>
     </section>
     <section>
-      <h3>Más sobre mí</h3>
+      <h3>{t('footer.title.more')}</h3>
       <ul>
         <li><a href='https://github.com/LeoLizc'>Github</a></li>
         <li>
@@ -60,12 +60,14 @@ const routeLocale = (currentLocale ?? 'es') === 'es' ? '' : `${currentLocale}/`;
 
   <div class='w-full p-4 text-xs text-gray-400 [&_a]:text-yellow-200'>
     <p>
-      Diseño basado en <a href='https://porfolio.dev/'>porfolio.dev</a> de <a
-        href='https://github.com/midudev'>Midudev.</a
-      >
+      {t('footer.based')}
+      <a href='https://porfolio.dev/'>porfolio.dev</a> (<a
+        href='https://github.com/midudev'>Midudev</a
+      >).
     </p>
     <p>
-      &copy;{year} Leo Lizcano. Derechos correspondientes reservados.
+      &copy;{year}
+      {t('footer.copy')}
     </p>
   </div>
 </footer>

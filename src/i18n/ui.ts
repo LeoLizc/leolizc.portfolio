@@ -20,7 +20,10 @@ export const ui = {
     'nav.home': 'Inicio',
     'change_language': 'Cambiar idioma',
     'footer.copy': 'LeoLizc. Casi todos los derechos reservados',
-    'footer.contact': 'Contáctame',
+    'footer.title.contact': 'Contáctame',
+    'footer.title.resources': 'Recursos',
+    'footer.title.more': 'Más sobre mí',
+    'footer.based': 'Diseño basado en',
   },
   en: {
     'nav.experience': 'Experience',
@@ -30,7 +33,10 @@ export const ui = {
     'nav.home': 'Home',
     'change_language': 'Change language',
     'footer.copy': 'LeoLizc. Almost all rights reserved',
-    'footer.contact': 'Contact me',
+    'footer.title.contact': 'Contact me',
+    'footer.title.resources': 'Resources',
+    'footer.title.more': 'More about me',
+    'footer.based': 'Design based on',
   },
 } as const;
 
