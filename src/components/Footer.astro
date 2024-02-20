@@ -7,20 +7,88 @@ const year = new Date().getFullYear();
 const routeLocale = (currentLocale ?? 'es') === 'es' ? '' : `${currentLocale}/`;
 ---
 
-<footer
-  class='flex flex-row flex-wrap justify-between w-full lg:w-[1020px] mb-6 px-3'
->
-  <span class='text-sm text-yellow-200/90'
-    >{`© ${year} ${t('footer.copy')}`}</span
+<footer class='w-full text-center'>
+  <div
+    class:list={[
+      'w-full p-4',
+      'flex flex-col gap-4 items-center justify-around md:justify-evenly',
+      'flex md:flex-row',
+      '[&>section>h3]:text-yellow-200/90',
+      '[&_section]:items-center [&_ul]:flex [&_ul]:flex-col [&_ul]:items-center',
+      '[&_li]:text-slate-300/90',
+    ]}
   >
-  <ul
-    class='flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0 gap-4 md:gap-6'
-  >
-    <li>
-      <a href={`/${routeLocale}#contacto`}>{t('footer.contact')}</a>
-    </li>
-    <li>
-      <a href={`tel:+573166574747`}>+57 (316) 657 47 47</a>
-    </li>
-  </ul>
+    <section>
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href='https://tabler.io/icons'>Tabler Icons</a></li>
+        <li><a href='https://fontsource.org'>Font Source</a></li>
+        <li><a href='https://porfolio.dev'>Midudev Porfolio.dev</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Contáctame</h3>
+      <ul>
+        <li>
+          <a href='https://www.linkedin.com/in/leonardo-lizcano-pinto0220/'
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href='mailto:ldlizcano@uninorte.edu.co'
+            >ldlizcano@uninorte.edu.co</a
+          >
+        </li>
+        <li><a href='tel:+573166574747'>+57 (316) 657 47 47</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Más sobre mí</h3>
+      <ul>
+        <li><a href='https://github.com/LeoLizc'>Github</a></li>
+        <li>
+          <a href='https://www.linkedin.com/in/leonardo-lizcano-pinto0220/'
+            >LinkedIn</a
+          >
+        </li>
+        <li><a href='https://cv.leolizc.tech'>Curriculum</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class='w-full p-4 text-xs text-gray-400 [&_a]:text-yellow-200'>
+    <p>
+      Diseño basado en <a href='https://porfolio.dev/'>porfolio.dev</a> de <a
+        href='https://github.com/midudev'>Midudev.</a
+      >
+    </p>
+    <p>
+      &copy;{year} Leo Lizcano. Derechos correspondientes reservados.
+    </p>
+  </div>
 </footer>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 7px auto;
+  }
+
+  section > ul {
+    padding-left: 1px;
+    & li {
+      font-size: 0.875rem /* 14px */;
+      line-height: 1.25rem /* 20px */;
+    }
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
