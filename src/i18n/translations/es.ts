@@ -18,11 +18,11 @@ const es = {
       title: 'Leonardo Lizcano | Portfolio de Ingeniero de Sistemas',
       description: 'Portafolio de Leonardo David Lizcano Pinto, alias LeoLizc. Ingeniero de Sistemas por la Universidad del Norte, Colombia desde 2023',
       KEY_WORDS: 'Leonardo Lizcano, Leonardo David Lizcano Pinto, Ingeniero de Sistemas, Desarrollador Web, Backend, Inteligencia Artificial, Colombia, Barranquilla, Universidad del Norte',
-      OG:{
+      OG: {
         title: 'Leonardo Lizcano | Portfolio de Ingeniero de Sistemas',
         description: 'Portafolio de Leonardo Lizcano Pinto, Ingeniero de Sistemas por la Universidad del Norte, Colombia. Obten más información sobre sus proyectos y experiencia en el desarrollo.',
       },
-      TWITTER:{
+      TWITTER: {
         title: 'Leonardo Lizcano | Portfolio de Ingeniero de Sistemas',
         description: 'Portafolio de Leonardo Lizcano Pinto, Ingeniero de Sistemas por la Universidad del Norte, Colombia. Obten más información sobre sus proyectos y experiencia en el desarrollo.',
       },
@@ -53,7 +53,7 @@ Me encargué de *diseñar* y servir el sistema basado en **Sockets** para orques
 Apoyé y resolví dudas a los estidantes acerca de el desarrollo de aplicaciones web con **Flask, Html y Sq-Lite**`,
       },
     ],
-    PROJECTS:{
+    PROJECTS: {
       "eyeland": {
         "title": "Epics - Eyeland",
         "url": "https://eyeland-project.github.io/webpage/",
@@ -86,7 +86,7 @@ Apoyé y resolví dudas a los estidantes acerca de el desarrollo de aplicaciones
         "title": "Simulador de Bungee Jumping",
         "url": "https://github.com/leovergaramarq/BungeeJumpingSimulator",
         "role": "Co-Autor",
-        "imageAlt": "Captura de pantalla de visualización de gráficas del simulador",
+        "imageAlt": "Captura de pantalla de visualización de gráficas del simulador.",
         "description": "Simulador del deporte de riesgo Bungee Jumping basado en la física del Movimiento Libre Amortiguado involucrado en esta actividad. Proyecto creado únicamente con fines académicos."
       }
     },
@@ -104,7 +104,7 @@ A nivel personal, me fascinan la **automatización** y la **inteligencia artific
       SEND: 'Enviar',
       NAME_LABEL: 'Nombre',
       NAME_PLACEHOLDER: 'Escribe aquí tu nombre',
-    },    
+    },
   },
 };
 
