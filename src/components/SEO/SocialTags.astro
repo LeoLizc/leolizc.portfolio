@@ -36,18 +36,19 @@ const { url, currentLocale } = Astro;
 />
 <meta property="og:image:alt" content={OG.imageAlt ?? defOG.imageAlt} />
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:site" content="@LeoLizcanoP" />
-<meta property="twitter:title" content={TWITTER.title ?? defTweet.title} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@LeoLizcanoP" />
+<meta name="twitter:title" content={TWITTER.title ?? defTweet.title} />
 <meta
-  property="twitter:description"
+  name="twitter:description"
   content={TWITTER.description ?? defTweet.description}
 />
 <meta
-  property="twitter:image"
+  name="twitter:image"
   content={TWITTER.image ?? "/imgs/social_preview_shots_so.webp"}
 />
 <meta
-  property="twitter:image:alt"
-  content={TWITTER.imageAlt ?? defOG.imageAlt}
+  name="twitter:image:src"
+  content={TWITTER.image ?? "/imgs/social_preview_shots_so.webp"}
 />
+<meta name="twitter:image:alt" content={TWITTER.imageAlt ?? defOG.imageAlt} />
