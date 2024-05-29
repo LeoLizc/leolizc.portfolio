@@ -45,10 +45,12 @@ const { url, currentLocale } = Astro;
 />
 <meta
   name="twitter:image"
-  content={TWITTER.image ?? "/imgs/social_preview_shots_so.webp"}
+  content={TWITTER.image ??
+    "https://portfolio.leolizc.tech/imgs/social_preview_shots_so.webp"}
 />
 <meta
   name="twitter:image:src"
-  content={TWITTER.image ?? "/imgs/social_preview_shots_so.webp"}
+  content={TWITTER.image ??
+    "https://portfolio.leolizc.tech/imgs/social_preview_shots_so.webp"}
 />
 <meta name="twitter:image:alt" content={TWITTER.imageAlt ?? defOG.imageAlt} />
