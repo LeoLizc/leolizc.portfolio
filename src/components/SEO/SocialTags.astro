@@ -1,5 +1,5 @@
 ---
-import useI18N from '@i18n/index';
+import useI18N from "@i18n/index";
 const { OG: defOG, TWITTER: defTweet } = useI18N(Astro).SOCIAL_DEFAULTS;
 
 interface Props {
@@ -22,29 +22,32 @@ const { url, currentLocale } = Astro;
 ---
 
 <!-- Open Graph -->
-<meta property='og:type' content='website' />
+<meta property="og:type" content="website" />
 <meta
-  property='og:url'
-  content={`${url.origin}${url.pathname === '/' ? '' : url.pathname}`}
+  property="og:url"
+  content={`${url.origin}${url.pathname === "/" ? "" : url.pathname}`}
 />
-<meta property='og:locale' content={currentLocale} />
-<meta property='og:title' content={OG.title ?? defOG.title} />
-<meta property='og:description' content={OG.description ?? defOG.description} />
+<meta property="og:locale" content={currentLocale} />
+<meta property="og:title" content={OG.title ?? defOG.title} />
+<meta property="og:description" content={OG.description ?? defOG.description} />
 <meta
-  property='og:image'
-  content={OG.image ?? '/imgs/social_preview_shots_so.webp'}
+  property="og:image"
+  content={OG.image ?? "/imgs/social_preview_shots_so.webp"}
 />
-<meta property='og:image:alt' content={OG.imageAlt ?? defOG.imageAlt} />
+<meta property="og:image:alt" content={OG.imageAlt ?? defOG.imageAlt} />
 <!-- Twitter -->
-<meta name='twitter:card' content='summary_large_image' />
-<meta name='twitter:site' content='@LeoLizcanoP' />
-<meta name='twitter:title' content={TWITTER.title ?? defTweet.title} />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:site" content="@LeoLizcanoP" />
+<meta property="twitter:title" content={TWITTER.title ?? defTweet.title} />
 <meta
-  name='twitter:description'
+  property="twitter:description"
   content={TWITTER.description ?? defTweet.description}
 />
 <meta
-  name='twitter:image'
-  content={TWITTER.image ?? '/imgs/social_preview_shots_so.webp'}
+  property="twitter:image"
+  content={TWITTER.image ?? "/imgs/social_preview_shots_so.webp"}
 />
-<meta name='twitter:image:alt' content={TWITTER.imageAlt ?? defOG.imageAlt} />
+<meta
+  property="twitter:image:alt"
+  content={TWITTER.imageAlt ?? defOG.imageAlt}
+/>
