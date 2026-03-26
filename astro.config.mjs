@@ -1,7 +1,7 @@
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from 'astro/config';
 import { DEFAULT_LOCALE, fallback, locales } from './src/i18n/index';
-import vercel from "@astrojs/vercel/serverless";
+import vercel from "@astrojs/vercel";
 import sitemap from "@astrojs/sitemap";
 const SITE_URL = "https://portfolio.leolizc.tech";
 
