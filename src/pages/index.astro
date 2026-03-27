@@ -79,9 +79,10 @@ const lang = Astro.currentLocale === DEFAULT_LOCALE ? '' : Astro.currentLocale;
         </h2>
         <nav class='flex my-5 gap-2 flex-wrap'>
           <SocialPill
+            id='emailSP'
             text='Email'
             hiddenText='ldlizcano@uninorte.edu.co'
-            class='z-20'
+            class='z-20 cursor-copy'
           >
             <MailIcon slot='icon' />
           </SocialPill>
@@ -136,4 +137,29 @@ const lang = Astro.currentLocale === DEFAULT_LOCALE ? '' : Astro.currentLocale;
       <ContactMe />
     </SectionLayout>
   </main>
+
+  <span id="copy-span" class="text-green-600 duration-300 fixed bottom-4 left-1/4 transition-transform transform translate-y-12 ease-in-out" data-msg>
+    Copiado ✔
+  </span>
 </Layout>
+
+<script>
+  document.getElementById('emailSP')?.addEventListener('click', function () {
+    const email = 'ldlizcano@uninorte.edu.co';
+    navigator.clipboard.writeText(email).then(
+      function () {
+        console.log('Email copied to clipboard');
+        const copySpan = document.getElementById('copy-span');
+        if (copySpan) {
+          copySpan.classList.add('translate-y-0');
+          setTimeout(() => {
+            copySpan.classList.remove('translate-y-0');
+          }, 2000);
+        }
+      },
+      function (err) {
+        console.error('Could not copy email: ', err);
+      }
+    );
+  });
+</script>
