@@ -37,13 +37,26 @@ const es = {
     CONTACT_TITLE: 'Contacto',
     EXPERIENCES: [
       {
+        title: 'Investigador y Desarrollador Red/ML - FRIDA/LACNIC - DeepStack-IDS',
+        date: 'Enero 2025 - Diciembre 2025',
+        description: `Proyecto investigativo financiado por FRIDA para desarrollar una herramienta para la detección y clasificación de ataques DoS y DDoS en tiempo real utilizando un Modelo de Machine Learning de capas apiladas (Stacked Model).
+<br><br>
+El proyecto se enfoca en la implementación de un sistema de detección de intrusiones (IDS) basado en Deep Learning, con el objetivo de mejorar la seguridad en redes y sistemas informáticos. Mi rol incluye apoyo en la investigación y desarrollo de la arquitectura del modelo, pero principalmente responsable de la implementación y optimización del sistema para su aplicación en entornos reales.`,
+        link: 'https://youtu.be/cUdTBmzmIno',
+        latest: true,
+      },
+      {
+        title: 'Investigador de Desarrollo - Tecnalia - Armada de Colombia',
+        date: 'Diciembre 2024 - Abril 2025',
+        description: `Ejercí como Co-investigador y desarrollador de Realidad Aumentada (AR) en el diseño y prototipado de tecnologías para el Sistema Integrado de Supervisión y Control de Plataforma Colombiano (SISCP-C) de la Armada Nacional de Colombia, con el objetivo de mejorar la operación de embarcaciones de superficie mediante una arquitectura abierta que optimiza la disponibilidad operativa, reduce la sobrecarga de las tripulaciones y los costos de mantenimiento.`
+      },
+      {
         title: 'Desarrollador Backend - Eyeland Epics IEEE',
         date: 'Agosto 2022 - Septiembre 2023',
         description: `Responsable del **desarrollo backend** en Proyecto parte de la iniciativa EPICS en *IEEE*, que se propone apoyar el proceso de **aprendizaje del inglés** para personas con **discapacidad visual** a través de una aplicación móvil, en su objetivo de aumentar la inclusión.
     
 Me encargué de *diseñar* y servir el sistema basado en **Sockets** para orquestar la comunicación y sincronización entre dispositivos y perfiles, así como la Web Api`,
-        link: 'https://eyeland-project.github.io/webpage/',
-        latest: true,
+        link: 'https://eyeland-project.github.io/webpage/'
       },
       {
         title: 'Mentor en programación web - MisionTIC 2022',
@@ -54,6 +67,13 @@ Apoyé y resolví dudas a los estidantes acerca de el desarrollo de aplicaciones
       },
     ],
     PROJECTS: {
+      "warframe": {
+        title: "Warframe weapon comparator",
+        url: "wcompare.leolizc.tech/",
+        role: "Author",
+        imageAlt: "Warframe weapon comparator web application",
+        description: "Web application to compare weapons in the game Warframe, with data obtained from the Warframe API and a custom algorithm to calculate the best weapon for each situation."
+      },
       "eyeland": {
         "title": "Epics - Eyeland",
         "url": "https://eyeland-project.github.io/webpage/",
@@ -90,7 +110,7 @@ Apoyé y resolví dudas a los estidantes acerca de el desarrollo de aplicaciones
         "description": "Simulador del deporte de riesgo Bungee Jumping basado en la física del Movimiento Libre Amortiguado involucrado en esta actividad. Proyecto creado únicamente con fines académicos."
       }
     },
-    ABOUT_ME: `Hola, soy Leonardo. Mi interés por la programación surgió en la secundaria, cuando desarrollé un sistema de inventario en **VBA** y, recientemente, he completado mis estudios de pregrado en **Ingeniería de Sistemas** en la *Universidad del Norte*.
+    ABOUT_ME: `Hola, soy Leonardo. Mi interés por la programación surgió en la secundaria, cuando desarrollé un sistema de inventario en **VBA** y actualmente terminé de cursar mi segundo semestre de maestría en **Ingeniería de Sistemas** en la *Universidad del Norte*.
 
 Durante mi formación, participé en eventos como *Expofísica*, con un simulador de físicas realistas. También destacé en **maratones de programación** en la institución, y tuve la oportunidad de participar en iniciativas apoyadas por la universidad.
     

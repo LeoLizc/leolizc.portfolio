@@ -39,6 +39,20 @@ export const en: Lang = {
     CONTACT_TITLE: "Contact Me",
     EXPERIENCES: [
       {
+        title: "Network/ML Researcher and Developer - FRIDA/LACNIC - DeepStack-IDS",
+        date: "January 2025 - December 2025",
+        description: `Research project funded by FRIDA to develop a tool for real-time detection and classification of DoS and DDoS attacks using a stacked-layer machine learning model (Stacked Model).
+<br><br>
+The project focuses on implementing an intrusion detection system (IDS) based on Deep Learning, with the goal of improving security in computer networks and systems. My role includes supporting the research and development of the model architecture, but I am mainly responsible for implementing and optimizing the system for use in real-world environments.`,
+        link: "https://youtu.be/cUdTBmzmIno",
+        latest: true,
+      },
+      {
+        title: "Development Researcher - Tecnalia - Colombian Navy",
+        date: "December 2024 - April 2025",
+        description: `I worked as a co-researcher and augmented reality (AR) developer in the design and prototyping of technologies for the Colombian Integrated Platform Supervision and Control System (SISCP-C) of the Colombian National Navy, aiming to improve the operation of surface vessels through an open architecture that optimizes operational availability and reduces crew workload and maintenance costs.`
+      },
+      {
         title: "Backend Developer - Eyeland Epics IEEE",
         date: "August 2022 - September 2023",
         description: `Responsible for the **backend development** in a project part of the EPICS initiative in *IEEE*, which aims to support the **English learning** process for people with **visual disabilities** through a mobile application, in its goal of increasing inclusion.
@@ -56,6 +70,13 @@ I supported and solved doubts for students about the development of web applicat
       },
     ],
     PROJECTS: {
+      warframe: {
+        title: "Warframe weapon comparator",
+        url: "wcompare.leolizc.tech/",
+        role: "Author",
+        imageAlt: "Warframe weapon comparator web application",
+        description: "Web application to compare weapons in the game Warframe, with data obtained from the Warframe API and a custom algorithm to calculate the best weapon for each situation."
+      },
       eyeland: {
         title: "Epics - Eyeland",
         url: "https://eyeland-project.github.io/webpage/",
@@ -92,7 +113,7 @@ I supported and solved doubts for students about the development of web applicat
         description: "Simulator of the risk sport Bungee Jumping based on the physics of the Free Damped Motion involved in this activity. Project created for academic purposes only."
       },
     },
-    ABOUT_ME:`Hello! I'm Leonardo. My interest in programming sparked during high school when I developed an inventory system in **VBA**, and recently, I completed my undergraduate studies in **Systems Engineering** at *Universidad del Norte*.
+    ABOUT_ME:`Hello! I'm Leonardo. My interest in programming sparked during high school when I developed an inventory system in **VBA**. I completed my undergraduate studies in **Systems Engineering** at *Universidad del Norte*, and currently I have finished the second semester of my master's degree in **Systems Engineering** at the same university.
 
 Throughout my education, I participated in events like *Expofísica* with a realistic physics simulator. I also excelled in **programming marathons** at the institution and had the opportunity to engage in university-supported initiatives.
     
