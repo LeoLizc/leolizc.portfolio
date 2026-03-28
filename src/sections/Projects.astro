@@ -5,6 +5,7 @@ import bungeeImage from '../assets/Bungee_shots_so.webp';
 import eyelandImage from '../assets/Eyeland_shots_so.webp';
 import parcheImage from '../assets/Parche_shots_so.webp';
 import simetImage from '../assets/Simet_shots_so.webp';
+import warframeImage from '../assets/Warframe_shots_so.webp';
 
 // #ff8836
 // #4d97ff
@@ -40,6 +41,21 @@ const { PROJECTS: proj } = useI18N(Astro).main;
       image={parcheImage}
       imageAlt={proj.parche.imageAlt}
       description={proj.parche.description}
+    />
+  </a>
+  <a
+    class='contents'
+    href={proj.warframe.url}
+    target='_blank'
+    rel='noopener noreferrer'
+  >
+    <BentoItem
+      class='md:col-span-12 [&_h3]:text-2xl [&_h3]:font-bold [&_h3]:text-[#4d97ff] [&_p]:leading-snug'
+      title={proj.warframe.title}
+      subtitle={proj.warframe.role}
+      image={warframeImage}
+      imageAlt={proj.warframe.imageAlt}
+      description={proj.warframe.description}
     />
   </a>
   <a

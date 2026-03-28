@@ -72,7 +72,7 @@ I supported and solved doubts for students about the development of web applicat
     PROJECTS: {
       warframe: {
         title: "Warframe weapon comparator",
-        url: "wcompare.leolizc.tech/",
+        url: "https://wcompare.leolizc.tech/",
         role: "Author",
         imageAlt: "Warframe weapon comparator web application",
         description: "Web application to compare weapons in the game Warframe, with data obtained from the Warframe API and a custom algorithm to calculate the best weapon for each situation."
