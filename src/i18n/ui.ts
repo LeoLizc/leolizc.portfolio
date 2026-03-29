@@ -15,6 +15,7 @@ export const ui = {
   es: {
     'nav.experience': 'Experiencia',
     'nav.projects': 'Proyectos',
+    'nav.articles': 'Artículos',
     'nav.about': 'Sobre mí',
     'nav.contact': 'Contacto',
     'nav.home': 'Inicio',
@@ -28,6 +29,7 @@ export const ui = {
   en: {
     'nav.experience': 'Experience',
     'nav.projects': 'Projects',
+    'nav.articles': 'Articles',
     'nav.about': 'About me',
     'nav.contact': 'Contact',
     'nav.home': 'Home',

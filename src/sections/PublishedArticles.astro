@@ -1,0 +1,23 @@
+---
+import ArticleItem from '@components/ArticleItem.astro';
+import useI18N from '@i18n/index';
+
+const { ARTICLES: articles, ARTICLES_READ } = useI18N(Astro).main;
+---
+
+<ul class='grid grid-cols-1 gap-4 md:grid-cols-2'>
+  {
+    articles.map((article) => (
+      <li class="mili relative aspect-square">
+        <ArticleItem
+          title={article.title}
+          publisher={article.publisher}
+          date={article.date}
+          description={article.description}
+          link={article.link}
+          readLabel={ARTICLES_READ}
+        />
+      </li>
+    ))
+  }
+</ul>

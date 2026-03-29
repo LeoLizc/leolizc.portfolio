@@ -32,9 +32,11 @@ export const en: Lang = {
     PHOTO_ALT: "Leonardo Lizcano's photo",
     TITLE: "Hello! I'm Leonardo",
     AVAILABLE_TEXT: "Available for work",
-    PRESENTATION: "I'm a software engineer. I have experience in backend web development and I'm also interested in frontend. I'm also interested in artificial intelligence.",
+    PRESENTATION: "I'm a software engineer. Researcher and web backend developer with knowledge in frontend, mobile and artificial intelligence.",
     EXPERIENCE_TITLE: "Experience",
     PROJECTS_TITLE: "Projects",
+    ARTICLES_TITLE: "Published Articles",
+    ARTICLES_READ: "Read article",
     ABOUT_TITLE: "About",
     CONTACT_TITLE: "Contact Me",
     EXPERIENCES: [
@@ -113,7 +115,17 @@ I supported and solved doubts for students about the development of web applicat
         description: "Simulator of the risk sport Bungee Jumping based on the physics of the Free Damped Motion involved in this activity. Project created for academic purposes only."
       },
     },
-    ABOUT_ME:`Hello! I'm Leonardo. My interest in programming sparked during high school when I developed an inventory system in **VBA**. I completed my undergraduate studies in **Systems Engineering** at *Universidad del Norte*, and currently I have finished the second semester of my master's degree in **Systems Engineering** at the same university.
+    ARTICLES: [
+      {
+        title: "Article title (placeholder)",
+        publisher: "Journal or publisher name",
+        date: "Month 2026",
+        description: "Short summary of the article to present its main focus and outcomes.",
+        link: "https://example.com",
+      },
+    ],
+    ABOUT_ME:`Hello! I'm Leonardo. My interest in programming sparked during high school when I developed an inventory system in **VBA**. I completed my undergraduate studies in **Systems Engineering** at *Universidad del Norte*, and currently I have finished the second semester of my master's degree in **Systems Engineering** at the same university.  
+    On a professional level, I have participated in projects and research in both management and **machine learning**.
 
 Throughout my education, I participated in events like *Expofísica* with a realistic physics simulator. I also excelled in **programming marathons** at the institution and had the opportunity to engage in university-supported initiatives.
     

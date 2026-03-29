@@ -17,6 +17,7 @@ import AboutMe from '@sections/AboutMe.astro';
 import ContactMe from '@sections/ContactMe.astro';
 import Experience from '@sections/Experience.astro';
 import Projects from '@sections/Projects.astro';
+import PublishedArticles from '@sections/PublishedArticles.astro';
 import { Image } from 'astro:assets';
 import meImage from '../assets/Me.jpg';
 
@@ -127,6 +128,10 @@ const lang = Astro.currentLocale === DEFAULT_LOCALE ? '' : Astro.currentLocale;
     <SectionLayout title={main.PROJECTS_TITLE} id='proyectos'>
       <TerminalIcon slot='icon' class='size-8' />
       <Projects />
+    </SectionLayout>
+    <SectionLayout title={main.ARTICLES_TITLE} id='articulos'>
+      <WritingIcon slot='icon' class='size-8' type={1} />
+      <PublishedArticles />
     </SectionLayout>
     <SectionLayout title={main.ABOUT_TITLE} id='sobre-mi'>
       <WritingIcon slot='icon' class='size-8' />

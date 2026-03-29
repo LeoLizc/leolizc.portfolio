@@ -30,9 +30,11 @@ const es = {
     PHOTO_ALT: 'Foto de Leonardo Lizcano',
     TITLE: '¡Hola! Soy Leonardo',
     AVAILABLE_TEXT: 'Disponible para trabajar',
-    PRESENTATION: 'Ingeniero de sistemas titulado. Desarrollador web backend con conocimientos en frontend. Y aficionado a la inteligencia artificial.',
+    PRESENTATION: 'Ingeniero de sistemas titulado. Investigador y Desarrollador web backend con conocimientos en frontend, movil e inteligencia artificial.',
     EXPERIENCE_TITLE: 'Experiencia',
     PROJECTS_TITLE: 'Proyectos',
+    ARTICLES_TITLE: 'Artículos publicados',
+    ARTICLES_READ: 'Leer artículo',
     ABOUT_TITLE: 'Sobre mí',
     CONTACT_TITLE: 'Contacto',
     EXPERIENCES: [
@@ -110,7 +112,31 @@ Apoyé y resolví dudas a los estidantes acerca de el desarrollo de aplicaciones
         "description": "Simulador del deporte de riesgo Bungee Jumping basado en la física del Movimiento Libre Amortiguado involucrado en esta actividad. Proyecto creado únicamente con fines académicos."
       }
     },
-    ABOUT_ME: `Hola, soy Leonardo. Mi interés por la programación surgió en la secundaria, cuando desarrollé un sistema de inventario en **VBA** y actualmente terminé de cursar mi segundo semestre de maestría en **Ingeniería de Sistemas** en la *Universidad del Norte*.
+    ARTICLES: [
+      {
+        title: 'A Stacking-Based Ensemble Model for Multiclass DDoS Detection Using Shallow and Deep Machine Learning Algorithms',
+        publisher: 'MDPI - Applied Sciences',
+        date: 'Enero 2026',
+        description: 'El artículo presenta un modelo de ensemble basado en stacking para la detección multiclase de ataques DDoS, combinando algoritmos de aprendizaje automático shallow y deep, evaluando su rendimiento y robustez en comparación con enfoques anteriores.',
+        link: 'https://www.mdpi.com/3668610',
+      },
+      {
+        title: 'Precedence Table Construction Algorithm for CFGs Regardless of Being OPGs',
+        publisher: 'MDPI - Algorithms',
+        date: 'Agosto 2024',
+        description: 'El artículo presenta un algoritmo para construir tablas de precedencia de operadores en gramáticas libres de contexto (CFGs), incluso cuando no son gramáticas de precedencia de operadores (OPGs), con análisis de complejidad y ejemplos prácticos.\nSe enfoca en abordar casos generales, incluyendo gramáticas con símbolos no terminales consecutivos, y proporciona una metodología sistemática para derivar relaciones entre símbolos gramaticales.',
+        link: 'https://www.mdpi.com/2903274',
+      },
+      {
+        title: 'Eyeland: A Visually-Impaired Accessible English Learning Application Using a Design-Based Research Framework',
+        publisher: 'IEEE',
+        date: 'Agosto 2024',
+        description: 'El artículo presenta Eyeland, una aplicación móvil diseñada con un marco de investigación basada en el diseño (DBR) para enseñar inglés como lengua extranjera (EFL) a estudiantes con discapacidad visual, integrando accesibilidad, aprendizaje basado en tareas y elementos de juegos serios para fomentar la inclusión y colaboración entre estudiantes con y sin discapacidad visual.',
+        link: 'https://ieeexplore.ieee.org/document/10637399',
+      },
+    ],
+    ABOUT_ME: `Hola, soy Leonardo. Mi interés por la programación surgió en la secundaria, cuando desarrollé un sistema de inventario en **VBA** y actualmente terminé de cursar mi segundo semestre de maestría en **Ingeniería de Sistemas** en la *Universidad del Norte*.  
+    A nivel profesional, he participado en proyectos e investigaciones tanto en el área de gestión como en **machine learning**.
 
 Durante mi formación, participé en eventos como *Expofísica*, con un simulador de físicas realistas. También destacé en **maratones de programación** en la institución, y tuve la oportunidad de participar en iniciativas apoyadas por la universidad.
     
